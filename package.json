@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/xiaoxing968/YqVue/issues"
   },
-  "homepage": "https://github.com/xiaoxing968/YqVue#readme"
+  "homepage": "https://github.com/xiaoxing968/YqVue#readme",
+  "dependencies": {
+    "vue": "^2.6.12"
+  }
 }
