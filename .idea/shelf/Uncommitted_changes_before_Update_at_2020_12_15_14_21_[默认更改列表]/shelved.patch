@@ -1,0 +1,14 @@
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># 哈哈\n# wozhidaole\n# 但是为什么呢!
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- README.md	(revision 59b97d66eacf5c1fca54fb7bd4546e835ba9b6ec)
++++ README.md	(date 1608012730395)
+@@ -1,3 +1,0 @@
+-# 哈哈
+-# wozhidaole
+-# 但是为什么呢!
+\ No newline at end of file
