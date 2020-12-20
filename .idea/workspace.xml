@@ -19,7 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2580482a-a355-4d7f-863d-74c37504aa1c" name="默认更改列表" comment="第一个按钮" />
+    <list default="true" id="2580482a-a355-4d7f-863d-74c37504aa1c" name="默认更改列表" comment="安装了parcel">
+      <change afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/button.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/button.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +58,8 @@
       <workItem from="1608012257922" duration="1088000" />
       <workItem from="1608013362501" duration="930000" />
       <workItem from="1608041731415" duration="1129000" />
-      <workItem from="1608043078411" duration="6924000" />
+      <workItem from="1608043078411" duration="10696000" />
+      <workItem from="1608441894243" duration="2838000" />
     </task>
     <task id="LOCAL-00001" summary="tijiaole">
       <created>1608012397519</created>
@@ -116,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608183783920</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="安装了parcel">
+      <created>1608184208540</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1608184208540</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,13 +156,22 @@
     <MESSAGE value="kaixin" />
     <MESSAGE value="修改初始化样式" />
     <MESSAGE value="第一个按钮" />
-    <option name="LAST_COMMIT_MESSAGE" value="第一个按钮" />
+    <MESSAGE value="安装了parcel" />
+    <option name="LAST_COMMIT_MESSAGE" value="安装了parcel" />
   </component>
   <component name="WindowStateProjectService">
     <state x="492" y="235" key="#Notifications" timestamp="1608012654420">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="492" y="235" key="#Notifications/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1608012654420" />
+    <state x="583" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608442229729">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="583" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1608442229729" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608184608373">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1608184608373" />
     <state x="608" y="114" key="RollbackChangesDialog" timestamp="1608013334880">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -161,10 +185,10 @@
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1608183789856" />
     <state x="361" y="128" width="814" height="550" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608045287860" />
-    <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608183766656">
+    <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608184945516">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1608183766656" />
+    <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1608184945516" />
     <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1608046248601" />
   </component>
 </project>

@@ -23,6 +23,9 @@
   "dependencies": {
     "vue": "^2.6.12"
   },
+  "alias": {
+    "vue" : "./node_modules/vue/dist/vue.common.js"
+  },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
   }
