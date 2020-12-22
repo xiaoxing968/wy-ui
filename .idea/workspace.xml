@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2580482a-a355-4d7f-863d-74c37504aa1c" name="默认更改列表" comment="第一个按钮">
+    <list default="true" id="2580482a-a355-4d7f-863d-74c37504aa1c" name="默认更改列表" comment="icon图标 及 icon的position定位">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/button.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/button.vue" afterDir="false" />
@@ -59,7 +59,7 @@
       <workItem from="1608043078411" duration="10696000" />
       <workItem from="1608441894243" duration="2838000" />
       <workItem from="1608444770916" duration="4832000" />
-      <workItem from="1608514091173" duration="5192000" />
+      <workItem from="1608514091173" duration="6776000" />
     </task>
     <task id="LOCAL-00001" summary="tijiaole">
       <created>1608012397519</created>
@@ -145,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608446999425</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="icon图标 及 icon的position定位">
+      <created>1608602728452</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1608602728452</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,7 +178,8 @@
     <MESSAGE value="修改初始化样式" />
     <MESSAGE value="安装了parcel" />
     <MESSAGE value="第一个按钮" />
-    <option name="LAST_COMMIT_MESSAGE" value="第一个按钮" />
+    <MESSAGE value="icon图标 及 icon的position定位" />
+    <option name="LAST_COMMIT_MESSAGE" value="icon图标 及 icon的position定位" />
   </component>
   <component name="WindowStateProjectService">
     <state x="492" y="235" key="#Notifications" timestamp="1608012654420">

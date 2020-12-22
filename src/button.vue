@@ -15,7 +15,11 @@ export default {
     icon: {},
     iconPosition: {
       type: String,
-      default: "left"
+      default: "left",
+      validator(val){
+        console.log(val === 'left')
+        return val === 'left' || val === 'right'
+      }
     }
   }
 }
