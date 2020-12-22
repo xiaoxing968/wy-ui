@@ -1,15 +1,15 @@
 <template>
   <button class="w-button" :class="{[`icon-${iconPosition}`]:true}">
-    <svg class="icon" v-if="icon">
-      <use :xlink:href=`#icon-${icon}`></use>
-    </svg>
+    <w-icon class="icon" :name="icon" v-if="icon"></w-icon>
     <div class="content">
       <slot></slot>
     </div>
   </button>
 </template>
 <script>
+import Icon from "./icon";
 export default {
+  components: {Icon},
   // props:['icon','iconPosition'],
   props: {
     icon: {},
@@ -36,10 +36,10 @@ export default {
   justify-content: center;
   align-items: center;
   vertical-align:middle;
-  & .icon {width: 1em;height: 1em;}
   &:hover {border-color: var(--border-color-hover);}
   &:active {background-color: var(--button-active-bg);}
   &:focus {outline: none;}
+
     > .content {order: 2;}
     > .icon {order: 1; margin-right: .2em}
   &.icon-right {
