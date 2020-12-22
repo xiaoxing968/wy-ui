@@ -1,7 +1,7 @@
 <template>
-  <button class="w-button" :class="{[`icon-${iconPosition}`]:true}">
-    <w-icon class="icon" :name="icon" v-if="icon"></w-icon>
-    <w-icon class="loading" name="loading"></w-icon>
+  <button class="w-button" :class="{[`icon-${iconPosition}`]:true}" @click="$emit('click')">
+    <w-icon class="loading icon" name="loading" v-if="loading"></w-icon>
+    <w-icon class="icon" :name="icon" v-if="icon && !loading"></w-icon>
     <div class="content">
       <slot></slot>
     </div>
@@ -11,16 +11,18 @@
 import Icon from "./icon";
 export default {
   components: {Icon},
-  // props:['icon','iconPosition'],
   props: {
     icon: {},
     iconPosition: {
       type: String,
       default: "left",
       validator(val){
-        console.log(val === 'left')
         return val === 'left' || val === 'right'
       }
+    },
+    loading:{
+      type: Boolean,
+      default:false
     }
   }
 }
