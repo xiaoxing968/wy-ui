@@ -19,11 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2580482a-a355-4d7f-863d-74c37504aa1c" name="默认更改列表" comment="安装了parcel">
+    <list default="true" id="2580482a-a355-4d7f-863d-74c37504aa1c" name="默认更改列表" comment="第一个按钮">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/button.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/button.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +38,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -58,7 +58,8 @@
       <workItem from="1608041731415" duration="1129000" />
       <workItem from="1608043078411" duration="10696000" />
       <workItem from="1608441894243" duration="2838000" />
-      <workItem from="1608444770916" duration="2136000" />
+      <workItem from="1608444770916" duration="4832000" />
+      <workItem from="1608514091173" duration="5192000" />
     </task>
     <task id="LOCAL-00001" summary="tijiaole">
       <created>1608012397519</created>
@@ -137,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608444886983</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="第一个按钮">
+      <created>1608446999425</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1608446999425</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,9 +169,9 @@
     <MESSAGE value="tijiao" />
     <MESSAGE value="kaixin" />
     <MESSAGE value="修改初始化样式" />
-    <MESSAGE value="第一个按钮" />
     <MESSAGE value="安装了parcel" />
-    <option name="LAST_COMMIT_MESSAGE" value="安装了parcel" />
+    <MESSAGE value="第一个按钮" />
+    <option name="LAST_COMMIT_MESSAGE" value="第一个按钮" />
   </component>
   <component name="WindowStateProjectService">
     <state x="492" y="235" key="#Notifications" timestamp="1608012654420">
@@ -191,10 +199,10 @@
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1608183789856" />
     <state x="361" y="128" width="814" height="550" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608045287860" />
-    <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608444830115">
+    <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608446948440">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1608184945516" />
-    <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1608444830115" />
+    <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1608446948440" />
   </component>
 </project>
