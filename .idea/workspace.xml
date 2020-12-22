@@ -19,7 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2580482a-a355-4d7f-863d-74c37504aa1c" name="默认更改列表" comment="新增button的loading状态">
+    <list default="true" id="2580482a-a355-4d7f-863d-74c37504aa1c" name="默认更改列表" comment="button的loading状态的切换">
+      <change afterPath="$PROJECT_DIR$/src/button-group.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
@@ -43,7 +44,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -60,7 +61,7 @@
       <workItem from="1608043078411" duration="10696000" />
       <workItem from="1608441894243" duration="2838000" />
       <workItem from="1608444770916" duration="4832000" />
-      <workItem from="1608514091173" duration="9911000" />
+      <workItem from="1608514091173" duration="12387000" />
     </task>
     <task id="LOCAL-00001" summary="tijiaole">
       <created>1608012397519</created>
@@ -174,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608633154046</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="button的loading状态的切换">
+      <created>1608634301449</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1608634301449</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,7 +212,8 @@
     <MESSAGE value="验证iconPosition" />
     <MESSAGE value="更新button里面的显示方式和样式" />
     <MESSAGE value="新增button的loading状态" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增button的loading状态" />
+    <MESSAGE value="button的loading状态的切换" />
+    <option name="LAST_COMMIT_MESSAGE" value="button的loading状态的切换" />
   </component>
   <component name="WindowStateProjectService">
     <state x="492" y="235" key="#Notifications" timestamp="1608012654420">
@@ -223,19 +232,24 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="608" y="114" key="RollbackChangesDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1608013334880" />
-    <state x="270" y="57" key="SettingsEditor" timestamp="1608043343527">
+    <state x="270" y="57" key="SettingsEditor" timestamp="1608634467034">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="270" y="57" key="SettingsEditor/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1608634467034" />
     <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1608043343527" />
-    <state x="361" y="145" width="814" height="550" key="Vcs.Push.Dialog.v2" timestamp="1608632454345">
+    <state x="361" y="145" width="814" height="550" key="Vcs.Push.Dialog.v2" timestamp="1608634302489">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1608632454345" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1608634302489" />
     <state x="361" y="128" width="814" height="550" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608045287860" />
     <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608631180211">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1608631180211" />
     <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1608446948440" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608635256933">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1608635256933" />
   </component>
 </project>

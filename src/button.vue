@@ -8,7 +8,7 @@
   </button>
 </template>
 <script>
-import Icon from "./icon";
+import Icon from "./icon"
 export default {
   components: {Icon},
   props: {
@@ -54,7 +54,7 @@ export default {
     > .icon {order: 2;margin-left: .2em;margin-right: 0}
   }
   .loading{
-    animation:spin 1.2s infinite linear;
+    animation:spin 1.2s infinite linear
   }
 }
 </style>
