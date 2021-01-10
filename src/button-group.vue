@@ -8,7 +8,7 @@
       for (let node of this.$el.children){
         let _nodeName = node.nodeName.toLocaleLowerCase();
         if(_nodeName !== "button"){
-          console.warn(`w-button-group组件内部只能嵌套w-button，而得到的是${_nodeName}`)
+          console.warn(`w-button-group组件内部只能嵌套w-button，但你使用了${_nodeName}`)
         }
       }
     }
@@ -22,7 +22,6 @@
     border-radius:0;
     &:not(:first-child){
       margin-left: -1px;
-
     }
     &:first-child{
       border-top-left-radius: var(--border-radius);
