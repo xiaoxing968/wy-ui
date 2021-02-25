@@ -8,9 +8,9 @@
   </button>
 </template>
 <script>
-import Icon from "./icon"
+import wIcon from "./icon"
 export default {
-  components: {Icon},
+  components: {wIcon},
   props: {
     icon: {},
     iconPosition: {

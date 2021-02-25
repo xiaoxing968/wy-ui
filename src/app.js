@@ -25,6 +25,7 @@ const expect = chai.expect
 
 // 单元测试
 {
+    // 测试按钮含有 icon
     const Constructor = Vue.extend(Button)
     const button = new Constructor({
         propsData:{
