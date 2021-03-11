@@ -1,9 +1,10 @@
 <template>
-  <svg class="w-icon">
+  <svg class="w-icon wui">
     <use :xlink:href=`#icon-${name}`></use>
   </svg>
 </template>
 <script>
+import './svg'
 export default{
   props:['name']
 }
