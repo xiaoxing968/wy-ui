@@ -10,6 +10,7 @@
 <script>
 import wIcon from "./icon"
 export default {
+  name:'w-button',
   components: {wIcon},
   props: {
     icon: {},
