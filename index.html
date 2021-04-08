@@ -7,16 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>hi! wy</title>
     <style>
-        *{margin:0;padding:0;box-sizing: border-box;}
-        :root{
-            --button-height:32px;
-            --font-size:14px;
-            --button-bg:white;
-            --button-active-bg:#eee;
-            --border-radius:4px;
-            --color:#333;
-            --border-color:#999;
-            --border-color-hover:#666;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --button-height: 32px;
+            --font-size: 14px;
+            --button-bg: white;
+            --button-active-bg: #eee;
+            --border-radius: 4px;
+            --color: #333;
+            --border-color: #999;
+            --border-color-hover: #666;
         }
     </style>
     <style>
@@ -25,20 +30,27 @@
 </head>
 <body>
 <div id="app">
-    <w-input></w-input>
-    <w-button icon="setting" icon-position="left" :loading="true">我是个大按钮</w-button>
-    <w-button icon="download" icon-position="right" :loading="loading" @click="loading = !loading">我是个按钮</w-button>
-    <w-button-group>
-        <w-button icon="left" icon-position="left" :loading="loading1" @click="loading1 = !loading1">left按钮</w-button>
-        <w-button icon-position="right" :loading="loading">middle</w-button>
-        <w-button icon="right" icon-position="right" :loading="loading2" @click="loading2 = !loading2">right按钮</w-button>
-    </w-button-group>
-    <w-button icon="setting" id="test" icon-position="left" :loading="true">test</w-button>
-    <w-button id="test2">test2</w-button>
+    <div style="margin: 50px">
+        <w-input value="hi 我value" error="error"></w-input>
+    </div>
+
+    <div>
+        <w-button icon="setting" icon-position="left" :loading="true">我是个大按钮</w-button>
+        <w-button icon="download" icon-position="right" :loading="loading" @click="loading = !loading">我是个按钮</w-button>
+        <w-button-group>
+            <w-button icon="left" icon-position="left" :loading="loading1" @click="loading1 = !loading1">left按钮
+            </w-button>
+            <w-button icon-position="right" :loading="loading">middle</w-button>
+            <w-button icon="right" icon-position="right" :loading="loading2" @click="loading2 = !loading2">right按钮
+            </w-button>
+        </w-button-group>
+        <w-button icon="setting" id="test" icon-position="left" :loading="true">test</w-button>
+        <w-button id="test2">test2</w-button>
+    </div>
 </div>
 
 <script src="./node_modules/vue/dist/vue.min.js"></script>
 <script src="./src/app.js"></script>
-<!--<script src="//at.alicdn.com/t/font_2281475_adm4v2thk79.js"></script>-->
+<!--<script src="//at.alicdn.com/t/font_2281475_0d78qjavqvkf.js"></script>-->
 </body>
 </html>
