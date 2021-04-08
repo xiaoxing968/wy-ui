@@ -25,6 +25,7 @@
 </head>
 <body>
 <div id="app">
+    <w-input></w-input>
     <w-button icon="setting" icon-position="left" :loading="true">我是个大按钮</w-button>
     <w-button icon="download" icon-position="right" :loading="loading" @click="loading = !loading">我是个按钮</w-button>
     <w-button-group>
@@ -32,8 +33,8 @@
         <w-button icon-position="right" :loading="loading">middle</w-button>
         <w-button icon="right" icon-position="right" :loading="loading2" @click="loading2 = !loading2">right按钮</w-button>
     </w-button-group>
-    <div id="test"></div>
-    <div id="test2"></div>
+    <w-button icon="setting" id="test" icon-position="left" :loading="true">test</w-button>
+    <w-button id="test2">test2</w-button>
 </div>
 
 <script src="./node_modules/vue/dist/vue.min.js"></script>
