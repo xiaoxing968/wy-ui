@@ -16,25 +16,47 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2580482a-a355-4d7f-863d-74c37504aa1c" name="默认更改列表" comment="新增button-group，并校验button-group的子元素">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_12_15_14_04_[默认更改列表]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_12_15_14_04___.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_12_15_14_21_[默认更改列表]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_12_15_14_21___.xml" beforeDir="false" />
+    <list default="true" id="2580482a-a355-4d7f-863d-74c37504aa1c" name="默认更改列表" comment="修改svg的问题">
+      <change afterPath="$PROJECT_DIR$/src/input.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/button-group.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/button-group.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
+    <list id="f214803d-c498-413c-ad97-26e91a52f776" name="New changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="main" />
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1lgIM4eWa6kbfXFt2FuhzbeS2s2" />
   <component name="ProjectViewState">
@@ -45,14 +67,76 @@
     <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="C:/temp" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="ts.external.directory.path" value="D:\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RunManager" selected="npm.test">
+    <configuration default="true" type="js.build_tools.npm" singleton="false">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="npx" />
+        <script value="parcel" />
+        <script value="index.html" />
+        <script value="--no-cache" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="run" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="run" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" singleton="false" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="npm.run" />
+      <item itemvalue="npm.test" />
+      <item itemvalue="npm.start" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.test" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\肖大胖子\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="2580482a-a355-4d7f-863d-74c37504aa1c" name="默认更改列表" comment="" />
+      <changelist id="f214803d-c498-413c-ad97-26e91a52f776" name="New changelist" comment="" />
       <created>1608012256242</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -65,6 +149,19 @@
       <workItem from="1608444770916" duration="4832000" />
       <workItem from="1608514091173" duration="12677000" />
       <workItem from="1608707454951" duration="6711000" />
+      <workItem from="1610277532961" duration="730000" />
+      <workItem from="1614131588358" duration="4978000" />
+      <workItem from="1614216163890" duration="21559000" />
+      <workItem from="1614302448425" duration="5101000" />
+      <workItem from="1614515695411" duration="2330000" />
+      <workItem from="1614563282702" duration="3075000" />
+      <workItem from="1615426484265" duration="17040000" />
+      <workItem from="1615636590914" duration="982000" />
+      <workItem from="1615719608104" duration="2880000" />
+      <workItem from="1615722686343" duration="6704000" />
+      <workItem from="1615730789501" duration="714000" />
+      <workItem from="1615731707871" duration="110000" />
+      <workItem from="1617875563207" duration="358000" />
     </task>
     <task id="LOCAL-00001" summary="tijiaole">
       <created>1608012397519</created>
@@ -192,18 +289,160 @@
       <option name="project" value="LOCAL" />
       <updated>1608636884037</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="安装chai">
+      <created>1610277660855</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1610277660855</updated>
+    </task>
+    <task id="LOCAL-00020" summary="安装chai">
+      <created>1614132243984</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1614132243984</updated>
+    </task>
+    <task id="LOCAL-00021" summary="使用chai.expect添加4个测试用例">
+      <created>1614220023217</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1614220023217</updated>
+    </task>
+    <task id="LOCAL-00022" summary="使用chai.spy监听回调函数">
+      <created>1614220697633</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1614220697633</updated>
+    </task>
+    <task id="LOCAL-00023" summary="使用chai.spy监听回调函数">
+      <created>1614228877686</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1614228877686</updated>
+    </task>
+    <task id="LOCAL-00024" summary="index.html">
+      <created>1614230091468</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1614230091468</updated>
+    </task>
+    <task id="LOCAL-00025" summary="使用karma做自动化测试，Mocha&amp;Chai做单元测试">
+      <created>1614256210657</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1614256210658</updated>
+    </task>
+    <task id="LOCAL-00026" summary="接入Travis CI">
+      <created>1614256238755</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1614256238755</updated>
+    </task>
+    <task id="LOCAL-00027" summary="接入Travis CI">
+      <created>1614302835060</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1614302835060</updated>
+    </task>
+    <task id="LOCAL-00028" summary="接入Travis CI 更改测试node版本">
+      <created>1614303709639</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1614303709639</updated>
+    </task>
+    <task id="LOCAL-00029" summary="接入Travis CI 更改测试node版本">
+      <created>1614304438160</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1614304438160</updated>
+    </task>
+    <task id="LOCAL-00030" summary="修改package.json">
+      <created>1614518480233</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1614518480233</updated>
+    </task>
+    <task id="LOCAL-00031" summary="修改package.json">
+      <created>1614518605613</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1614518605613</updated>
+    </task>
+    <task id="LOCAL-00032" summary="修改svg的问题">
+      <created>1615454102139</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1615454102139</updated>
+    </task>
+    <task id="LOCAL-00033" summary="修改svg的问题">
+      <created>1615722714132</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1615722714132</updated>
+    </task>
+    <task id="LOCAL-00034" summary="修改svg的问题">
+      <created>1615725701113</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1615725701113</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="SHOW_OTHER_BRANCHES" value="true" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/main" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
@@ -224,13 +463,27 @@
     <MESSAGE value="新增button的loading状态" />
     <MESSAGE value="button的loading状态的切换" />
     <MESSAGE value="新增button-group，并校验button-group的子元素" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增button-group，并校验button-group的子元素" />
+    <MESSAGE value="安装chai" />
+    <MESSAGE value="使用chai.expect添加4个测试用例" />
+    <MESSAGE value="使用chai.spy监听回调函数" />
+    <MESSAGE value="index.html" />
+    <MESSAGE value="使用karma做自动化测试，Mocha&amp;Chai做单元测试" />
+    <MESSAGE value="接入Travis CI" />
+    <MESSAGE value="接入Travis CI 更改测试node版本" />
+    <MESSAGE value="修改package.json" />
+    <MESSAGE value="修改svg的问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改svg的问题" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="492" y="235" key="#Notifications" timestamp="1608012654420">
+    <state x="492" y="235" key="#Notifications" timestamp="1615722507741">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="492" y="235" key="#Notifications/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1608012654420" />
+    <state x="492" y="235" key="#Notifications/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1615454514061" />
+    <state x="492" y="235" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1615722507741" />
+    <state x="223" y="67" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614231935648">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1614231935648" />
     <state x="583" y="213" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608442229729">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -239,28 +492,75 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1608184608373" />
+    <state x="147" y="65" width="1228" height="687" key="DiffContextDialog" timestamp="1615721766155">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="147" y="65" key="DiffContextDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1614230149932" />
+    <state x="147" y="65" width="1228" height="687" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1615721766155" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1615723455959">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1615723455959" />
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1615730753624">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1614248639947" />
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1615730753624" />
+    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1615730753623">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1614248639946" />
+    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1615730753623" />
+    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1615730753623">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1614248639946" />
+    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1615730753623" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1615730753624">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1614248639946" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1615730753624" />
     <state x="608" y="114" key="RollbackChangesDialog" timestamp="1608013334880">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="608" y="114" key="RollbackChangesDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1608013334880" />
-    <state x="270" y="57" key="SettingsEditor" timestamp="1608634467034">
+    <state x="270" y="57" key="SettingsEditor" timestamp="1615731342030">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="57" key="SettingsEditor/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1608634467034" />
-    <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1608043343527" />
-    <state x="361" y="145" width="814" height="550" key="Vcs.Push.Dialog.v2" timestamp="1608636888036">
+    <state x="270" y="57" key="SettingsEditor/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1614229654671" />
+    <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1615731342030" />
+    <state x="599" y="281" key="VCS.EditChangelistDialog" timestamp="1614219739532">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1608636888036" />
-    <state x="361" y="128" width="814" height="550" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1608045287860" />
-    <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608631180211">
+    <state x="599" y="281" key="VCS.EditChangelistDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1614219739532" />
+    <state x="361" y="128" width="814" height="550" key="Vcs.Push.Dialog.v2" timestamp="1615725706592">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1608631180211" />
-    <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1608446948440" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608635256933">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1615454516562" />
+    <state x="361" y="128" width="814" height="550" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1615725706592" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1615447831345">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1608635256933" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1615447831345" />
+    <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1615721459511">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1614240818496" />
+    <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1615721459511" />
+    <state x="172" y="188" width="535" height="536" key="find.popup" timestamp="1615730821722">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="172" y="188" width="535" height="536" key="find.popup/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1615451862886" />
+    <state x="172" y="188" width="535" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1615730821722" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1615446389135">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1615446389135" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1615730951171">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1615454412798" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1615730951171" />
   </component>
 </project>

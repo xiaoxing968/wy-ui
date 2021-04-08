@@ -5,10 +5,9 @@
   "main": "dist/index.js",
   "scripts": {
     "start": "parcel index.html --no-cache",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "parcel build test/* --no-cache --no-minify && karma start --single-run",
     "run": "npx parcel index.html --no-cache",
-    "dev-test": "parcel watch test/* --no-cache & karma start",
-    "test": "parcel build test/* --no-cache --no-minify && karma start --single-run"
+    "dev-test": "parcel watch test/* --no-cache & karma start"
   },
   "repository": {
     "type": "git",
