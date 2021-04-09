@@ -10,16 +10,30 @@ Vue.component("w-button-group", IconGroup)
 Vue.component("w-input", Input)
 
 new Vue({
-    el:"#app",
-    data:{
+    el: "#app",
+    data: {
         loading: false,
-        loading1:false,
-        loading2:false,
+        loading1: false,
+        loading2: false,
+    },
+    created() {
+        setTimeout(() => {
+            let event = new Event('change');
+            let inputElement = this.$el.querySelector('input')
+            inputElement.dispatchEvent(event)
+            console.log('hi')
+        }, 3000)
+    },
+    methods: {
+        inputChange(e) {
+            console.log(e)
+        }
     }
 })
 
 import chai from 'chai'
 import spies from 'chai-spies'
+
 chai.use(spies)
 
 
@@ -30,8 +44,8 @@ const expect = chai.expect
     // 测试按钮含有 icon
     const Constructor = Vue.extend(Button)
     const button = new Constructor({
-        propsData:{
-            icon:'setting'
+        propsData: {
+            icon: 'setting'
         }
     })
     button.$mount('#test')
@@ -43,9 +57,9 @@ const expect = chai.expect
 {
     const Constructor = Vue.extend(Button)
     const button = new Constructor({
-        propsData:{
-            icon:'setting',
-            loading:true
+        propsData: {
+            icon: 'setting',
+            loading: true
         }
     })
     button.$mount('#test2')
@@ -56,13 +70,13 @@ const expect = chai.expect
     button.$destroy()
 }
 {
-    const  div = document.createElement("div")
+    const div = document.createElement("div")
     document.body.appendChild(div)
     const Constructor = Vue.extend(Button)
     const button = new Constructor({
-        propsData:{
-            icon:"setting",
-            iconPosition:"right"
+        propsData: {
+            icon: "setting",
+            iconPosition: "right"
         }
     })
     button.$mount(div)
@@ -75,13 +89,14 @@ const expect = chai.expect
 {
     const Constructor = Vue.extend(Button)
     const vm = new Constructor({
-        propsData:{
-            icon:"setting",
+        propsData: {
+            icon: "setting",
         }
     })
     vm.$mount()
-    let spy = chai.spy(function (){})
-    vm.$on('click',spy)
+    let spy = chai.spy(function () {
+    })
+    vm.$on('click', spy)
     let button = vm.$el
     button.click()
     expect(spy).to.have.been.called()
