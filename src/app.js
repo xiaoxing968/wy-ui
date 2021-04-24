@@ -27,6 +27,9 @@ new Vue({
     methods: {
         inputChange(e) {
             console.log(e)
+        },
+        inputEvent (e) {
+            console.log(e)
         }
     }
 })
