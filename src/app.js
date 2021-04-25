@@ -15,6 +15,7 @@ new Vue({
         loading: false,
         loading1: false,
         loading2: false,
+        message:"hi message"
     },
     created() {
         setTimeout(() => {
