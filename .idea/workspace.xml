@@ -26,7 +26,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2580482a-a355-4d7f-863d-74c37504aa1c" name="默认更改列表" comment="新增col row">
+    <list default="true" id="2580482a-a355-4d7f-863d-74c37504aa1c" name="默认更改列表" comment="重构col 和 row">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/col.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/col.vue" afterDir="false" />
@@ -193,7 +193,8 @@
       <workItem from="1620732626706" duration="663000" />
       <workItem from="1620783030314" duration="1014000" />
       <workItem from="1620809952575" duration="688000" />
-      <workItem from="1620868859498" duration="1957000" />
+      <workItem from="1620868859498" duration="3315000" />
+      <workItem from="1620955080376" duration="3237000" />
     </task>
     <task id="LOCAL-00001" summary="tijiaole">
       <created>1608012397519</created>
@@ -517,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619699122487</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="重构col 和 row">
+      <created>1620906528111</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1620906528112</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -566,7 +574,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="修改初始化样式" />
     <MESSAGE value="安装了parcel" />
     <MESSAGE value="第一个按钮" />
     <MESSAGE value="icon图标 及 icon的position定位" />
@@ -591,7 +598,8 @@
     <MESSAGE value="修复input测试用例 change事件的错误" />
     <MESSAGE value="input测试用例" />
     <MESSAGE value="新增col row" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增col row" />
+    <MESSAGE value="重构col 和 row" />
+    <option name="LAST_COMMIT_MESSAGE" value="重构col 和 row" />
   </component>
   <component name="WindowStateProjectService">
     <state x="492" y="235" key="#Notifications" timestamp="1615722507741">
@@ -607,10 +615,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="378" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1619235921827" />
-    <state x="147" y="65" width="1228" height="687" key="DiffContextDialog" timestamp="1615721766155">
+    <state x="147" y="65" width="1228" height="687" key="DiffContextDialog" timestamp="1620906542340">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="147" y="65" key="DiffContextDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1614230149932" />
+    <state x="147" y="65" key="DiffContextDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1620906542340" />
     <state x="147" y="65" width="1228" height="687" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1615721766155" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1620282264567">
       <screen x="0" y="0" width="1536" height="824" />
@@ -650,10 +658,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="599" y="281" key="VCS.EditChangelistDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1614219739532" />
-    <state x="361" y="145" width="814" height="550" key="Vcs.Push.Dialog.v2" timestamp="1619699636992">
+    <state x="361" y="145" width="814" height="550" key="Vcs.Push.Dialog.v2" timestamp="1620906544086">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1619699636992" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1620906544086" />
     <state x="361" y="128" width="814" height="550" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1619236205579" />
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1615447831345">
       <screen x="0" y="0" width="1536" height="824" />
