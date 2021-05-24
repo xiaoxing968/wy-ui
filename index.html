@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>hi! wy</title>
+    <title>wy—vue</title>
     <style>
         * {
             margin: 0;
@@ -35,10 +35,10 @@
             <w-col>1</w-col>
             <w-col>2</w-col>
         </w-row>
-        <w-row gutter="5" align="right">
-            <w-col :span="2">1</w-col>
-            <w-col :span="20">2</w-col>
-            <w-col :span="2">3</w-col>
+        <w-row :gutter="50">
+            <w-col :span="2" :phone="{span:24}" :ipad="{span:10,}">1</w-col>
+            <w-col :span="20" :phone={span:24} :ipad="{span:10,offset:2}">2</w-col>
+            <w-col :span="2" :phone={span:24} :ipad="{span:20,offset:2}">2</w-col>
         </w-row>
     </div>
     <div style="margin: 50px">

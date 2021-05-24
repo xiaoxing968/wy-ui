@@ -27,7 +27,7 @@ export default {
       let {gutter} = this
       return {
         marginLeft: -gutter / 2 + 'px',
-        marginRight: -gutter / 2 + 'px'
+        // marginRight: -gutter / 2 + 'px'
       }
     }
   },
@@ -42,7 +42,7 @@ export default {
 <style scoped lang="less">
 .row {
   display: flex;
-
+  flex-wrap: wrap;
   &.align-left {
     justify-content: flex-start
   }
