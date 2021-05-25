@@ -23,14 +23,34 @@
             --border-color: #999;
             --border-color-hover: #666;
         }
-    </style>
-    <style>
-
+        .layout_demo{
+            border: 1px solid blue;
+            min-height: 100px;
+        }
     </style>
 </head>
 <body>
 <div id="app">
-    <div>
+
+    <w-container style="border: 1px solid red; height: 100vh">
+        <w-header class="text-box">header</w-header>
+        <w-container>
+            <w-aside class="text-box">aside</w-aside>
+            <w-main class="text-box">main</w-main>
+        </w-container>
+        <w-footer class="text-box">footer</w-footer>
+    </w-container>
+
+
+
+
+
+    <w-container>
+        <w-header class="layout_demo">header</w-header>
+        <w-aside class="layout_demo">slider</w-aside>
+        <w-main class="layout_demo">main</w-main>
+        <w-footer class="layout_demo">footer</w-footer>
+    </w-container>
         <w-row>
             <w-col>1</w-col>
             <w-col>2</w-col>
@@ -40,7 +60,6 @@
             <w-col :span="20" :phone={span:24} :ipad="{span:10,offset:2}">2</w-col>
             <w-col :span="2" :phone={span:24} :ipad="{span:20,offset:2}">2</w-col>
         </w-row>
-    </div>
     <div style="margin: 50px">
         <w-input value="hi 我value" error="error"></w-input>
         <w-input value="hi readonly" readonly></w-input>

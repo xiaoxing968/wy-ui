@@ -11,15 +11,15 @@ describe('Row', () => {
         expect(Row).to.be.ok
     })
     it('可以接收gutter', (done) => {
-        Vue.component('x-row', Row)
-        Vue.component('x-col', Col)
+        Vue.component('w-row', Row)
+        Vue.component('w-col', Col)
         const div = document.createElement('div')
         document.body.appendChild(div)
         div.innerHTML = `
-        <x-row :gutter="20">
-          <x-col :span="12"></x-col>
-          <x-col :span="12"></x-col>
-        </x-row>
+        <w-row :gutter="20">
+          <w-col :span="12"></w-col>
+          <w-col :span="12"></w-col>
+        </w-row>
       `
         const vm = new Vue({
             el: div
