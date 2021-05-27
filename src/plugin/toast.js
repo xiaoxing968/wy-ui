@@ -5,9 +5,8 @@ let currentToast
 export default {
     install (Vue, option) {
         Vue.prototype.$toast = function (toastOptions) {
-            let { xError } = Vue.prototype
-            if (arguments.length === 0) {
-                xError('请输入提示信息！')
+            if (arguments.length === 0 || !toastOptions.message) {
+                console.error('请输入提示信息！')
                 return
             }
             let propsData = getPropsData(typeof arguments[0], toastOptions)

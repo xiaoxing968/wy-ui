@@ -32,7 +32,7 @@ export default {
       default: false
     },
     enableHtml: {
-      type: Boolean,
+      type: [Boolean,String],
       default: false
     },
     closeButton: {
@@ -78,7 +78,7 @@ export default {
       })
     },
     clickCloseButton() {
-      this.close()
+      this.close('more')
       if (this.closeButton && this.closeButton.onClose) {
         this.closeButton.onClose(this)
       }
@@ -94,7 +94,7 @@ export default {
 </script>
 
 <style scoped lang="less">
-@import "css/app.less";
+@import "./css/app.less";
 .toast-wrapper {
   position: fixed;
   left: 50%;
@@ -144,12 +144,11 @@ export default {
   .close-button {
     flex-shrink: 0;
     padding: 0 1.2em;
-
+    cursor:pointer;
     > span {
       flex-shrink: 0
     }
   }
-
   .line {
     width: 1px;
     background: #646566;
