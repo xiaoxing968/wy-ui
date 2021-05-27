@@ -10,7 +10,7 @@ import Header from './layout/header'
 import Footer from './layout/footer'
 import Aside from './layout/aside'
 import Main from './layout/main'
-import Toast from './toast'
+import Toast from './plugin/toast'
 
 Vue.component("w-button", Button)
 Vue.component("w-icon", Icon)
@@ -44,12 +44,6 @@ new Vue({
         // }, 3000)
     },
     methods: {
-        inputChange(e) {
-            console.log(e)
-        },
-        inputEvent (e) {
-            console.log(e)
-        },
         showToast(){
             this.$toast({
                 message: `hi${parseInt(Math.random()*100)}`,
@@ -57,7 +51,7 @@ new Vue({
                 // enableHtml: true,
                 duration: 0,
                 showClose: true,
-                position: 'middle',
+                position: 'top',
                 closeButton: {
                     text: '知道了',
                     // icon: 'close'

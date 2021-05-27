@@ -26,25 +26,13 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2580482a-a355-4d7f-863d-74c37504aa1c" name="默认更改列表" comment="layout布局的测试用例">
-      <change afterPath="$PROJECT_DIR$/src/css/app.less" afterDir="false" />
+    <list default="true" id="2580482a-a355-4d7f-863d-74c37504aa1c" name="默认更改列表" comment="文件目录结构重构 拆分部分less作为公共属性">
+      <change afterPath="$PROJECT_DIR$/src/plugin/toast.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/toast.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aside.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/aside.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/button-group.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/button/button-group.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/button.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/button/button.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/col.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/grid/col.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/container.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/container.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/footer.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/main.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/row.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/grid/row.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/button.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/button.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/col.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/col.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/layout.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/layout.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/row.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/row.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/app.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/app.less" afterDir="false" />
     </list>
     <list id="f214803d-c498-413c-ad97-26e91a52f776" name="New changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,10 +73,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../web/blog/xiaoxing968.github.io" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="ts.external.directory.path" value="D:\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -220,14 +210,7 @@
       <workItem from="1621129128034" duration="1906000" />
       <workItem from="1621844410090" duration="7620000" />
       <workItem from="1621906855511" duration="13081000" />
-      <workItem from="1622082558037" duration="2909000" />
-    </task>
-    <task id="LOCAL-00004" summary="zhid">
-      <created>1608013280068</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1608013280068</updated>
+      <workItem from="1622082558037" duration="5081000" />
     </task>
     <task id="LOCAL-00005" summary="tijiao">
       <created>1608043571921</created>
@@ -565,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621924140270</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="文件目录结构重构 拆分部分less作为公共属性">
+      <created>1622085788725</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1622085788726</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -614,7 +604,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="新增button的loading状态" />
     <MESSAGE value="button的loading状态的切换" />
     <MESSAGE value="新增button-group，并校验button-group的子元素" />
     <MESSAGE value="安装chai" />
@@ -639,7 +628,8 @@
     <MESSAGE value="row 和 col的测试用例" />
     <MESSAGE value="增加layout布局" />
     <MESSAGE value="layout布局的测试用例" />
-    <option name="LAST_COMMIT_MESSAGE" value="layout布局的测试用例" />
+    <MESSAGE value="文件目录结构重构 拆分部分less作为公共属性" />
+    <option name="LAST_COMMIT_MESSAGE" value="文件目录结构重构 拆分部分less作为公共属性" />
   </component>
   <component name="WindowStateProjectService">
     <state x="492" y="235" key="#Notifications" timestamp="1615722507741">
@@ -651,6 +641,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1617953001881" />
+    <state x="511" y="265" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1622085963641">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="511" y="265" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1622085963641" />
     <state x="378" y="0" key="CommitChangelistDialog2" timestamp="1619235921827">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -669,25 +663,25 @@
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1621925916994" />
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1615723455959" />
-    <state width="1515" height="180" key="GridCell.Tab.0.bottom" timestamp="1622084012949">
+    <state width="1515" height="180" key="GridCell.Tab.0.bottom" timestamp="1622086502154">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="180" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1622084012949" />
+    <state width="1515" height="180" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1622086502154" />
     <state width="1515" height="228" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1619238215220" />
-    <state width="1515" height="180" key="GridCell.Tab.0.center" timestamp="1622084012949">
+    <state width="1515" height="180" key="GridCell.Tab.0.center" timestamp="1622086502154">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="180" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1622084012949" />
+    <state width="1515" height="180" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1622086502154" />
     <state width="1515" height="228" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1619238215220" />
-    <state width="1515" height="180" key="GridCell.Tab.0.left" timestamp="1622084012949">
+    <state width="1515" height="180" key="GridCell.Tab.0.left" timestamp="1622086502154">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="180" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1622084012949" />
+    <state width="1515" height="180" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1622086502154" />
     <state width="1515" height="228" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1619238215220" />
-    <state width="1515" height="180" key="GridCell.Tab.0.right" timestamp="1622084012949">
+    <state width="1515" height="180" key="GridCell.Tab.0.right" timestamp="1622086502154">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="180" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1622084012949" />
+    <state width="1515" height="180" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1622086502154" />
     <state width="1515" height="228" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1619238215220" />
     <state x="270" y="57" key="SettingsEditor" timestamp="1617883382752">
       <screen x="0" y="0" width="1536" height="824" />
@@ -706,10 +700,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="599" y="281" key="VCS.EditChangelistDialog/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1614219739532" />
-    <state x="361" y="145" width="814" height="550" key="Vcs.Push.Dialog.v2" timestamp="1621924492772">
+    <state x="361" y="145" width="814" height="550" key="Vcs.Push.Dialog.v2" timestamp="1622085792984">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1621924492772" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1622085792984" />
     <state x="361" y="128" width="814" height="550" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1619236205579" />
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1621850606008">
       <screen x="0" y="0" width="1536" height="824" />

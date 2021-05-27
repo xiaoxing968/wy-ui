@@ -31,56 +31,56 @@
 </head>
 <body>
 <div id="app">
-
-    <w-container style="border: 1px solid red; height: 100vh">
-        <w-header class="text-box">header</w-header>
-        <w-container>
-            <w-aside class="text-box">aside</w-aside>
-            <w-main class="text-box">main</w-main>
-        </w-container>
-        <w-footer class="text-box">footer</w-footer>
-    </w-container>
-
-
+    <w-button @click="showToast" icon="setting" icon-position="left" :loading="true">我是个大按钮</w-button>
+<!--    <w-container style="border: 1px solid red; height: 100vh">-->
+<!--        <w-header class="text-box">header</w-header>-->
+<!--        <w-container>-->
+<!--            <w-aside class="text-box">aside</w-aside>-->
+<!--            <w-main class="text-box">main</w-main>-->
+<!--        </w-container>-->
+<!--        <w-footer class="text-box">footer</w-footer>-->
+<!--    </w-container>-->
 
 
 
-    <w-container>
-        <w-header class="layout_demo">header</w-header>
-        <w-aside class="layout_demo">slider</w-aside>
-        <w-main class="layout_demo">main</w-main>
-        <w-footer class="layout_demo">footer</w-footer>
-    </w-container>
-        <w-row>
-            <w-col>1</w-col>
-            <w-col>2</w-col>
-        </w-row>
-        <w-row :gutter="50">
-            <w-col :span="2" :phone="{span:24}" :ipad="{span:10,}">1</w-col>
-            <w-col :span="20" :phone={span:24} :ipad="{span:10,offset:2}">2</w-col>
-            <w-col :span="2" :phone={span:24} :ipad="{span:20,offset:2}">2</w-col>
-        </w-row>
-    <div style="margin: 50px">
-        <w-input value="hi 我value" error="error"></w-input>
-        <w-input value="hi readonly" readonly></w-input>
-        <w-input value="hi disabled" disabled></w-input>
-        <w-input v-model="message"></w-input>
-        <p>{{message}}</p>
-    </div>
 
-    <div>
-        <w-button icon="setting" icon-position="left" :loading="true">我是个大按钮</w-button>
-        <w-button icon="download" icon-position="right" :loading="loading" @click="loading = !loading">我是个按钮</w-button>
-        <w-button-group>
-            <w-button icon="left" icon-position="left" :loading="loading1" @click="loading1 = !loading1">left按钮
-            </w-button>
-            <w-button icon-position="right" :loading="loading">middle</w-button>
-            <w-button icon="right" icon-position="right" :loading="loading2" @click="loading2 = !loading2">right按钮
-            </w-button>
-        </w-button-group>
+
+<!--    <w-container>-->
+<!--        <w-header class="layout_demo">header</w-header>-->
+<!--        <w-aside class="layout_demo">slider</w-aside>-->
+<!--        <w-main class="layout_demo">main</w-main>-->
+<!--        <w-footer class="layout_demo">footer</w-footer>-->
+<!--    </w-container>-->
+<!--        <w-row>-->
+<!--            <w-col>1</w-col>-->
+<!--            <w-col>2</w-col>-->
+<!--        </w-row>-->
+<!--        <w-row :gutter="50">-->
+<!--            <w-col :span="2" :phone="{span:24}" :ipad="{span:10,}">1</w-col>-->
+<!--            <w-col :span="20" :phone={span:24} :ipad="{span:10,offset:2}">2</w-col>-->
+<!--            <w-col :span="2" :phone={span:24} :ipad="{span:20,offset:2}">2</w-col>-->
+<!--        </w-row>-->
+<!--    <div style="margin: 50px">-->
+<!--        <w-input value="hi 我value" error="error"></w-input>-->
+<!--        <w-input value="hi readonly" readonly></w-input>-->
+<!--        <w-input value="hi disabled" disabled></w-input>-->
+<!--        <w-input v-model="message"></w-input>-->
+<!--        <p>{{message}}</p>-->
+<!--    </div>-->
+
+<!--    <div>-->
+<!--        <w-button icon="setting" icon-position="left" :loading="true">我是个大按钮</w-button>-->
+<!--        <w-button icon="download" icon-position="right" :loading="loading" @click="loading = !loading">我是个按钮</w-button>-->
+<!--        <w-button-group>-->
+<!--            <w-button icon="left" icon-position="left" :loading="loading1" @click="loading1 = !loading1">left按钮-->
+<!--            </w-button>-->
+<!--            <w-button icon-position="right" :loading="loading">middle</w-button>-->
+<!--            <w-button icon="right" icon-position="right" :loading="loading2" @click="loading2 = !loading2">right按钮-->
+<!--            </w-button>-->
+<!--        </w-button-group>-->
         <w-button icon="setting" id="test" icon-position="left" :loading="true">test</w-button>
         <w-button id="test2">test2</w-button>
-    </div>
+<!--    </div>-->
 </div>
 
 <script src="./node_modules/vue/dist/vue.min.js"></script>
