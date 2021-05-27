@@ -8,7 +8,7 @@
   </button>
 </template>
 <script>
-import wIcon from "./icon"
+import wIcon from "../icon"
 export default {
   name:'w-button',
   components: {wIcon},

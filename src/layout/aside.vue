@@ -7,7 +7,7 @@
   </transition>
 </template>
 <script>
-import layoutMixins from "./mixins/layoutMixins"
+import layoutMixins from "../mixins/layoutMixins"
 export default {
   name: 'WAside',
   mixins:[layoutMixins],

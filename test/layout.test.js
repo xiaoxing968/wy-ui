@@ -1,10 +1,10 @@
 const expect = chai.expect;
 import Vue from 'vue'
-import Container from '../src/container'
-import Aside from '../src/aside'
-import Header from '../src/header'
-import Footer from '../src/footer'
-import Main from '../src/footer'
+import Container from '../src/layout/container'
+import Aside from '../src/layout/aside'
+import Header from '../src/layout/header'
+import Footer from '../src/layout/footer'
+import Main from '../src/layout/footer'
 
 Vue.config.productionTip = false
 Vue.config.devtools = false

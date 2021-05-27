@@ -1,15 +1,16 @@
 import Vue from 'vue'
-import Button from './button'
+import Button from './button/button'
 import Icon from './icon'
-import IconGroup from './button-group'
+import IconGroup from './button/button-group'
 import Input from './input'
-import Col from './col'
-import Row from './row'
-import Container from './container'
-import Header from './header'
-import Footer from './footer'
-import Aside from './aside'
-import Main from './main'
+import Col from './grid/col'
+import Row from './grid/row'
+import Container from './layout/container'
+import Header from './layout/header'
+import Footer from './layout/footer'
+import Aside from './layout/aside'
+import Main from './layout/main'
+import Toast from './toast'
 
 Vue.component("w-button", Button)
 Vue.component("w-icon", Icon)
@@ -22,6 +23,9 @@ Vue.component("w-header", Header)
 Vue.component("w-footer", Footer)
 Vue.component("w-aside", Aside)
 Vue.component("w-main", Main)
+Vue.component("w-toast", Toast)
+
+Vue.use(Toast)
 
 new Vue({
     el: "#app",
@@ -32,12 +36,12 @@ new Vue({
         message:"hi message"
     },
     created() {
-        setTimeout(() => {
-            let event = new Event('change');
-            let inputElement = this.$el.querySelector('input')
-            inputElement.dispatchEvent(event)
-            console.log('hi')
-        }, 3000)
+        // setTimeout(() => {
+        //     let event = new Event('change');
+        //     let inputElement = this.$el.querySelector('input')
+        //     inputElement.dispatchEvent(event)
+        //     console.log('hi')
+        // }, 3000)
     },
     methods: {
         inputChange(e) {
@@ -45,12 +49,27 @@ new Vue({
         },
         inputEvent (e) {
             console.log(e)
+        },
+        showToast(){
+            this.$toast({
+                message: `hi${parseInt(Math.random()*100)}`,
+                // message: '<i>hi!</i>',
+                // enableHtml: true,
+                duration: 0,
+                showClose: true,
+                position: 'middle',
+                closeButton: {
+                    text: '知道了',
+                    // icon: 'close'
+                }
+            })
         }
     }
 })
 
 import chai from 'chai'
 import spies from 'chai-spies'
+import toast from "./toast";
 
 chai.use(spies)
 
