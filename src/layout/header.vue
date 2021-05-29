@@ -11,7 +11,6 @@ export default {
   mixins:[layoutMixins],
   mounted() {
     this.fatherDetermine()
-    console.log(this.height,'height')
   },
 }
 </script>
