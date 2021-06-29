@@ -32,9 +32,11 @@
 <body>
 <div id="app">
 
-        <w-tab name="name1" value="1">
-            <w-tabs value="val1"></w-tabs>
-        </w-tab>
+        <w-tabs name="name1" v-model="color" value="color">
+            <w-tab label="红" name="red"></w-tab>
+            <w-tab label="黄" name="yellow"></w-tab>
+            <w-tab label="蓝" name="blue"></w-tab>
+        </w-tabs>
 
     <w-button @click="showToast" icon="setting" icon-position="left" :loading="true">我是个大按钮</w-button>
     <w-button icon="setting" id="test" icon-position="left" :loading="true">test</w-button>

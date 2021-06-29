@@ -26,6 +26,11 @@ export default {
     return {
     }
   },
+  created() {
+    // this.tabsBus.$emit('getTabProps', this.$props)
+  },
+  mounted() {
+  },
   methods: {
   }
 }
