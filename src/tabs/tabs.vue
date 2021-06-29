@@ -1,30 +1,34 @@
 <template>
-  <div class="w-tab">
+  <div class="w-tabs">
     <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'WTab',
+  name: 'WTabs',
   components: {},
   props: {
-    label: {
-      type: String,
-      default: ''
-    },
-    name: {
+    value: {
       type: [String, Number],
       required: true
     },
-    disabled: {
-      type: Boolean,
-      default: false
+    tabPosition: {
+      type: String,
+      validator (value) {
+        return ['top', 'left', 'right', 'bottom'].indexOf(value) > -1
+      }
     }
+  },
+  computed: {
+
   },
   data () {
     return {
     }
+  },
+  mounted () {
+    console.log(this)
   },
   methods: {
   }
