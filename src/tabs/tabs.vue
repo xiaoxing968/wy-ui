@@ -43,8 +43,11 @@ export default {
       tabsBus: this
     }
   },
+  created() {
+    this.tabsBus.selectTab = this.value
+  },
   mounted() {
-    console.log(this,'this',this.value)
+    console.log(this,'mounted')
   },
   methods: {},
 }

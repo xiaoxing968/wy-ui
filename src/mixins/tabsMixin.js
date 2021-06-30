@@ -7,7 +7,6 @@ const tabMixin = {
     },
     created () {
         this.getTabProps()
-        console.log(this.tabsBus,'this.tabsBus')
     },
     methods: {
         getTabProps () {

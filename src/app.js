@@ -34,7 +34,7 @@ Vue.use(Toast)
 new Vue({
     el: "#app",
     data: {
-        color:"red",
+        color:"green",
         message:"hi message"
     },
     created() {

@@ -1,5 +1,5 @@
 <template>
-  <div class="w-tab">
+  <div class="w-tab" v-show="tabsBus.selectTab === name">
     <slot></slot>
   </div>
 </template>
@@ -7,6 +7,7 @@
 <script>
 export default {
   name: 'WTab',
+  inject: ['tabsBus'],
   components: {},
   props: {
     label: {
@@ -16,6 +17,9 @@ export default {
     name: {
       type: [String, Number],
       required: true
+    },
+    icon: {
+      type: String,
     },
     disabled: {
       type: Boolean,
@@ -27,7 +31,7 @@ export default {
     }
   },
   created() {
-    // this.tabsBus.$emit('getTabProps', this.$props)
+    this.tabsBus.$emit('getTabProps', this.$props)
   },
   mounted() {
   },
