@@ -1,0 +1,103 @@
+@import url('../css/app');
+
+.w-tab-nav__wrapper {
+  height: 100%;
+  display: flex;
+  position: relative;
+
+  .w-tab-nav__scroll {
+    position: relative;
+    height: @item-height-regular;
+    display: flex;
+    width: 100%;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background: @gray-2;
+    }
+
+    .w-tab-nav__item {
+      display: flex;
+      height: @item-height-regular;
+      flex-shrink: 0;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0 @padding-md;
+      font-weight: 600;
+      font-size: @font-size-normal;
+
+      &:nth-of-type(2) {
+        padding-left: 0;
+      }
+
+      &:last-of-type {
+        padding-right: 0;
+      }
+
+      &.nav-active, &:hover {
+        color: @main-theme-color;
+        cursor: pointer;
+      }
+
+      &.nav-disabled {
+        color: @gray-3;
+        cursor: default;
+      }
+    }
+
+    &.tab-top::after, &.tab-right::after, &.tab-bottom::after {
+      left: 0
+    }
+
+    &.tab-left, &.tab-right {
+      flex-direction: column;
+      display: flex;
+      height: 100%;
+
+      &::after {
+        width: 2px;
+        height: 100%;
+      }
+
+      .w-tab-nav__item {
+        padding: 0 @padding-md;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        text-align: left;
+      }
+    }
+
+    &.tab-left {
+      margin-right: 15px;
+
+      .w-tab-nav__item {
+        text-align: right;
+      }
+
+      &::after {
+        right: 0
+      }
+    }
+
+    //&.tab-left::after { right: 0 }
+    &.tab-right {
+      margin-left: 15px;
+    }
+    &.tab-top {
+      margin-bottom: 15px;
+    }
+    &.tab-bottom {
+      margin-top: 15px;
+    }
+
+    &.tab-bottom::after {
+      top: 0
+    }
+  }
+}

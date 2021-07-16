@@ -26,14 +26,14 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2580482a-a355-4d7f-863d-74c37504aa1c" name="默认更改列表" comment="新建tabs 和tab的基本结构">
-      <change afterPath="$PROJECT_DIR$/src/mixins/tabsMixin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tabs/tab-bar.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tabs/tabNav.vue" afterDir="false" />
+    <list default="true" id="2580482a-a355-4d7f-863d-74c37504aa1c" name="默认更改列表" comment="可以为tabNav添加一个icon">
+      <change afterPath="$PROJECT_DIR$/src/tabs/tabNav.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tabs/tab.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabs/tab.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/wy-ui.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/wy-ui.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mixins/tabsMixin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/mixins/tabsMixin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tabs/tab-bar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabs/tab-bar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tabs/tabNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabs/tabNav.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tabs/tabs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabs/tabs.vue" afterDir="false" />
     </list>
     <list id="f214803d-c498-413c-ad97-26e91a52f776" name="New changelist" comment="" />
@@ -221,21 +221,15 @@
       <workItem from="1623028811990" duration="1043000" />
       <workItem from="1623130935511" duration="681000" />
       <workItem from="1623201660434" duration="799000" />
-      <workItem from="1624951249867" duration="8522000" />
-    </task>
-    <task id="LOCAL-00009" summary="第一个按钮">
-      <created>1608183783920</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1608183783920</updated>
-    </task>
-    <task id="LOCAL-00010" summary="安装了parcel">
-      <created>1608184208540</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1608184208540</updated>
+      <workItem from="1624951249867" duration="13040000" />
+      <workItem from="1625016557553" duration="19654000" />
+      <workItem from="1625059196818" duration="5155000" />
+      <workItem from="1625189626265" duration="1357000" />
+      <workItem from="1625205091120" duration="1246000" />
+      <workItem from="1625449007072" duration="802000" />
+      <workItem from="1625462598448" duration="1693000" />
+      <workItem from="1625534375763" duration="1898000" />
+      <workItem from="1626332710899" duration="15583000" />
     </task>
     <task id="LOCAL-00011" summary="安装了parcel">
       <created>1608444886983</created>
@@ -566,7 +560,21 @@
       <option name="project" value="LOCAL" />
       <updated>1624958963631</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="注入tabs的eventBus">
+      <created>1624965861728</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1624965861728</updated>
+    </task>
+    <task id="LOCAL-00059" summary="可以为tabNav添加一个icon">
+      <created>1625059470789</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1625059470789</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -615,8 +623,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="index.html" />
-    <MESSAGE value="使用karma做自动化测试，Mocha&amp;Chai做单元测试" />
     <MESSAGE value="接入Travis CI" />
     <MESSAGE value="接入Travis CI 更改测试node版本" />
     <MESSAGE value="修改package.json" />
@@ -640,7 +646,9 @@
     <MESSAGE value="优化样式以及toast测试用例" />
     <MESSAGE value="新建tabs" />
     <MESSAGE value="新建tabs 和tab的基本结构" />
-    <option name="LAST_COMMIT_MESSAGE" value="新建tabs 和tab的基本结构" />
+    <MESSAGE value="注入tabs的eventBus" />
+    <MESSAGE value="可以为tabNav添加一个icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="可以为tabNav添加一个icon" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1617953001881">
@@ -691,10 +699,11 @@
     </state>
     <state width="757" height="184" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1624958990990" />
     <state width="1515" height="228" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1619238215220" />
-    <state x="270" y="57" key="SettingsEditor" timestamp="1617883382752">
+    <state x="270" y="57" key="SettingsEditor" timestamp="1624972732820">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="57" key="SettingsEditor/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1617883382752" />
+    <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1624972732820" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1621910592005">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -703,11 +712,15 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="623" y="325" key="VCS.ChangelistChooser/0.0.1536.824@0.0.1536.824" timestamp="1619235943566" />
-    <state x="361" y="145" width="814" height="550" key="Vcs.Push.Dialog.v2" timestamp="1624959003767">
+    <state x="361" y="128" width="814" height="550" key="Vcs.Push.Dialog.v2" timestamp="1625059474070">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1624959003767" />
-    <state x="361" y="128" width="814" height="550" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1619236205579" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1624965881392" />
+    <state x="361" y="128" width="814" height="550" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1625059474070" />
+    <state x="93" y="93" width="1350" height="630" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1626425497804">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="93" y="93" width="1350" height="630" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.816/-1920.0.1920.1040@0.0.1536.816" timestamp="1626425497804" />
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1621850606008">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -716,19 +729,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1624958869612" />
-    <state x="172" y="188" width="535" height="536" key="find.popup" timestamp="1624965006607">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="172" y="186" width="535" height="536" key="find.popup" timestamp="1626422846293">
+      <screen x="0" y="0" width="1536" height="816" />
     </state>
+    <state x="172" y="186" width="535" height="536" key="find.popup/0.0.1536.816/-1920.0.1920.1040@0.0.1536.816" timestamp="1626422846293" />
     <state x="-1705" y="237" width="669" height="677" key="find.popup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1621846738402" />
-    <state x="172" y="188" width="535" height="536" key="find.popup/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1624965006607" />
+    <state x="172" y="188" width="535" height="536" key="find.popup/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1625104800302" />
     <state x="172" y="188" width="535" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1619235601186" />
-    <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1621923164130">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="425" y="185" width="672" height="671" key="run.anything.popup" timestamp="1626400453405">
+      <screen x="0" y="0" width="1536" height="816" />
     </state>
+    <state x="425" y="185" width="672" height="671" key="run.anything.popup/0.0.1536.816/-1920.0.1920.1040@0.0.1536.816" timestamp="1626400453405" />
     <state x="425" y="187" width="672" height="677" key="run.anything.popup/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1621923164130" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1617931377207">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="431" y="144" width="672" height="672" key="search.everywhere.popup" timestamp="1626423220092">
+      <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1617931377207" />
+    <state x="431" y="144" width="672" height="672" key="search.everywhere.popup/0.0.1536.816/-1920.0.1920.1040@0.0.1536.816" timestamp="1626423220092" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1625045094343" />
   </component>
 </project>

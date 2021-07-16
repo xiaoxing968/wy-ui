@@ -1,6 +1,5 @@
 <template>
-  <div class="w-tab__active-bar">
-    hi
+  <div class="w-tab__active-bar" :style="barStyle">
   </div>
 </template>
 
@@ -25,10 +24,10 @@ export default {
   methods: {
   },
   mounted() {
-    console.log(this.tabsBus,'q');
-    this.tabsBus.$on('tabBar', (index, navTab) => {
+    this.tabsBus.$on('tabBar', (index,navTab) => {
       let { isVertical } = this
       let { tabPosition } = this.tabsBus
+      navTab = navTab[0];//@TODO
       let navTabStyle = window.getComputedStyle(navTab)
       let { paddingLeft, paddingRight } = navTabStyle
       let width = navTab.getBoundingClientRect().width - (parseFloat(paddingLeft) + parseFloat(paddingRight))
@@ -45,11 +44,19 @@ export default {
             left: `${translate}px`, width: `${width}px`
           }
       this.barStyle = style
-      console.log(this.barStyle)
     })
   }
 }
 </script>
 
 <style scoped lang="less">
+@import "../css/app";
+.w-tab__active-bar {
+  position: absolute;
+  bottom: 0;
+  z-index: 99;
+  height: 2px;
+  background: @main-theme-color;
+  transition: all .5s;
+}
 </style>

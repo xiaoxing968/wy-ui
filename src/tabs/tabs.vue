@@ -1,5 +1,5 @@
 <template>
-  <div class="w-tabs">
+  <div class="w-tabs" :class="tabsClasses">
     <tab-nav></tab-nav>
     <slot></slot>
   </div>
@@ -18,6 +18,7 @@ export default {
     },
     tabPosition: {
       type: String,
+      default:"top",
       validator(value) {
         return ['top', 'left', 'right', 'bottom'].indexOf(value) > -1
       }
@@ -36,6 +37,12 @@ export default {
       set: function (value) {
         this.$emit('input', value)
       }
+    },
+    tabsClasses () {
+      let { tabPosition } = this
+      return [
+        `tab-${tabPosition}`
+      ]
     }
   },
   data() {
@@ -54,4 +61,29 @@ export default {
 </script>
 
 <style scoped lang="less">
+@import "../css/app";
+.w-tabs {
+  display: flex;
+  flex-direction: column;
+  .w-tab__header-tab__header {
+    margin-bottom: @padding-xs;
+  }
+  &.tab-bottom {
+    flex-direction: column-reverse;
+    .w-tab__header { margin-top: @padding-xs; }
+  }
+  &.tab-left, &.tabs-right {
+    flex-direction: row;
+    .w-tab__header { height: 100%; }
+  }
+  &.tab-left {
+    flex-direction: row;
+    .w-tab__header { margin-right: @padding-xs; }
+  }
+  &.tab-right {
+    flex-direction: row-reverse;
+    .w-tabs__content { width: 100%; }
+    .w-tab__header { margin-left: @padding-xs; flex-shrink: 0; }
+  }
+}
 </style>
