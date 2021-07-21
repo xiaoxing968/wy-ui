@@ -36,17 +36,17 @@
 <!--            <w-tab label="红" name="red">我是红色</w-tab>-->
 <!--            -->
 
-            <w-tab label="黄" name="yellow" icon="setting">
+            <w-tab-pane label="黄" name="yellow" icon="setting">
                 <div style="color: red;">我是黄色</div>
-            </w-tab>
-            <w-tab label="绿" name="green">
+            </w-tab-pane>
+            <w-tab-pane label="绿" name="green" disabled>
                 <div style="color: red;">我是lvse</div>
-            </w-tab>
-            <w-tab label="slot" name="slot">
+            </w-tab-pane>
+            <w-tab-pane label="slot" name="slot">
                 <div style="color: red;">
                     <w-input value=""></w-input>
                 </div>
-            </w-tab>
+            </w-tab-pane>
         </w-tabs>
 
     <w-button @click="showToast" icon="setting" icon-position="left" :loading="true">我是个大按钮</w-button>

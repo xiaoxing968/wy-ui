@@ -8,19 +8,19 @@
       <div class="line" ref="line" v-if="showClose"></div>
       <div class="close-button flex-box" v-if="showClose" @click.stop="clickCloseButton">
         <span v-if="closeButton.text">{{ closeButton.text }}</span>
-        <x-icon v-if="closeButton.icon" :name="closeButton.icon" style="margin-left: 3px"></x-icon>
+        <w-icon v-if="closeButton.icon" :name="closeButton.icon" style="margin-left: 3px"></w-icon>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import XIcon from './icon'
+import WIcon from './icon'
 
 export default {
-  name: 'XToast',
+  name: 'WToast',
   components: {
-    XIcon
+    XIcon: WIcon
   },
   props: {
     duration: {

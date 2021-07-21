@@ -1,5 +1,5 @@
 <template>
-  <div class="w-tab" v-show="tabsBus.selectTab === name">
+  <div class="w-tab-pane" v-show="tabsBus.selectTab === name">
     <slot></slot>
   </div>
 </template>

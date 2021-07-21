@@ -1,6 +1,6 @@
 <template>
   <div class="w-tabs" :class="tabsClasses">
-    <tab-nav></tab-nav>
+    <tab-nav ref="tabNav"></tab-nav>
     <slot></slot>
   </div>
 </template>
@@ -54,7 +54,6 @@ export default {
     this.tabsBus.selectTab = this.value
   },
   mounted() {
-    console.log(this,'mounted')
   },
   methods: {},
 }

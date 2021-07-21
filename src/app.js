@@ -11,7 +11,7 @@ import Footer from './layout/footer'
 import Aside from './layout/aside'
 import Main from './layout/main'
 import Toast from './plugin/toast'
-import Tab from './tabs/tab'
+import tabPane from './tabs/tabPane'
 import Tabs from './tabs/tabs'
 
 Vue.component("w-button", Button)
@@ -27,7 +27,7 @@ Vue.component("w-aside", Aside)
 Vue.component("w-main", Main)
 Vue.component("w-toast", Toast)
 Vue.component("w-tabs", Tabs)
-Vue.component("w-tab", Tab)
+Vue.component("w-tab-pane", tabPane)
 
 Vue.use(Toast)
 

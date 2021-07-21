@@ -6,7 +6,7 @@
          :class="tabNavClasses(nav)"
          v-for="(nav, index) in tabPanes" :key="index"
          :ref=`tab-${nav.name}`
-         @click="clickNavItem(nav.name)">
+         @click="clickNavItem(nav)">
       <w-icon class="icon" :name="nav.icon" v-if="nav.icon"></w-icon>
       {{ nav.label }}
     </div>
@@ -37,8 +37,9 @@ export default {
         this.tabsBus.$emit('tabBar', index, navTab)
       })
     },
-    clickNavItem(name) {
-      console.log(name)
+    clickNavItem(nav) {
+      let {name, disabled} = nav
+      if (disabled)return
       this.tabsBus.selectTab = name
     },
     tabNavClasses(nav) {
@@ -46,7 +47,8 @@ export default {
       let {selectTab} = this.tabsBus
       return [
         selectTab === name ? 'nav-active' : '',
-        disabled ? 'nav-disabled' : ''
+        disabled ? 'nav-disabled' : '',
+        `w-tab-nav__item-${name}`
       ]
     },
   },

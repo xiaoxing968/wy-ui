@@ -5,16 +5,16 @@ import Toast from '../src/toast'
 Vue.config.productionTip = false
 Vue.config.devtools = false
 
-describe ('Toast', () => {
-    it ('存在.', () => {
+describe('Toast', () => {
+    it('存在.', () => {
         expect(Toast).to.be.ok
     })
-    describe ('props', () => {
+    describe('props', () => {
         const Constructor = Vue.extend(Toast)
         let vm
         const div = document.createElement('div')
         document.body.appendChild(div)
-        it ('可以接收duration', (done) => {
+        it('可以接收duration', (done) => {
             vm = new Constructor({
                 propsData: {
                     duration: 500
@@ -28,7 +28,7 @@ describe ('Toast', () => {
                 done()
             }, 800)
         })
-        it ('可以接收showClose / closeButton', () => {
+        it('可以接收showClose / closeButton', (done) => {
             const callback = sinon.fake();
             vm = new Constructor({
                 propsData: {
@@ -40,15 +40,18 @@ describe ('Toast', () => {
                     }
                 }
             }).$mount(div)
-            const element = vm.$el
-            const closeButton = element.querySelector('.close-button')
-            expect(closeButton.textContent.trim()).to.eq('知道了')
-            const useElement = vm.$el.querySelector('use')
-            expect(useElement.getAttribute('xlink:href')).to.equal('#icon-close')
-            closeButton.click()
-            expect(callback).to.have.been.called
-            div.remove()
-            vm.$destroy()
+            setTimeout(() => {
+                const element = vm.$el
+                const closeButton = element.querySelector('.close-button')
+                expect(closeButton.textContent.trim()).to.eq('知道了')
+                const useElement = vm.$el.querySelector('use')
+                expect(useElement.getAttribute('xlink:href')).to.equal('#icon-close')
+                closeButton.click()
+                expect(callback).to.have.been.called
+                div.remove()
+                vm.$destroy()
+            }, 2000)
+            done()
         })
         it('接受 enableHtml', () => {
             vm = new Constructor({
