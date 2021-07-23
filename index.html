@@ -32,24 +32,10 @@
 <body>
 <div id="app">
 
-        <w-tabs name="name1" v-model="color" value="color">
-<!--            <w-tab label="红" name="red">我是红色</w-tab>-->
-<!--            -->
-
-            <w-tab-pane label="黄" name="yellow" icon="setting">
-                <div style="color: red;">我是黄色</div>
-            </w-tab-pane>
-            <w-tab-pane label="绿" name="green" disabled>
-                <div style="color: red;">我是lvse</div>
-            </w-tab-pane>
-            <w-tab-pane label="slot" name="slot">
-                <div style="color: red;">
-                    <w-input value=""></w-input>
-                </div>
-            </w-tab-pane>
-        </w-tabs>
-
-    <w-button @click="showToast" icon="setting" icon-position="left" :loading="true">我是个大按钮</w-button>
+    <w-popover>
+        <template #content>pop over的内容哈哈哈</template>
+        <w-button>点我</w-button>
+    </w-popover>
     <w-button icon="setting" id="test" icon-position="left" :loading="true">test</w-button>
     <w-button id="test2">test2</w-button>
 </div>

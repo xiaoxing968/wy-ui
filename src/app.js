@@ -13,6 +13,7 @@ import Main from './layout/main'
 import Toast from './plugin/toast'
 import tabPane from './tabs/tabPane'
 import Tabs from './tabs/tabs'
+import Popover from './popover'
 
 Vue.component("w-button", Button)
 Vue.component("w-icon", Icon)
@@ -28,6 +29,7 @@ Vue.component("w-main", Main)
 Vue.component("w-toast", Toast)
 Vue.component("w-tabs", Tabs)
 Vue.component("w-tab-pane", tabPane)
+Vue.component("w-popover", Popover)
 
 Vue.use(Toast)
 
