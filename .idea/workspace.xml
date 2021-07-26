@@ -26,17 +26,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2580482a-a355-4d7f-863d-74c37504aa1c" name="默认更改列表" comment="完成tabs功能和样式">
-      <change afterPath="$PROJECT_DIR$/test/tabs.test.js" afterDir="false" />
+    <list default="true" id="2580482a-a355-4d7f-863d-74c37504aa1c" name="默认更改列表" comment="创建popover和基本的功能">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tabs/tab.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabs/tabPane.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tabs/tabNav.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabs/tabNav.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tabs/tabNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabs/tabNav.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tabs/tabs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabs/tabs.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/toast.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/toast.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/toast.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/toast.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/wy-ui.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/wy-ui.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/popover.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/popover.vue" afterDir="false" />
     </list>
     <list id="f214803d-c498-413c-ad97-26e91a52f776" name="New changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +94,7 @@
       <command value="join lin" />
     </option>
   </component>
-  <component name="RunManager" selected="npm.test">
+  <component name="RunManager" selected="npm.run">
     <configuration default="true" type="js.build_tools.npm" singleton="false">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -234,21 +228,8 @@
       <workItem from="1626332710899" duration="18188000" />
       <workItem from="1626658658478" duration="3308000" />
       <workItem from="1626745048296" duration="1768000" />
-      <workItem from="1626788232162" duration="10035000" />
-    </task>
-    <task id="LOCAL-00012" summary="第一个按钮">
-      <created>1608446999425</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1608446999425</updated>
-    </task>
-    <task id="LOCAL-00013" summary="icon图标 及 icon的position定位">
-      <created>1608602728452</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1608602728452</updated>
+      <workItem from="1626788232162" duration="21031000" />
+      <workItem from="1627263249022" duration="781000" />
     </task>
     <task id="LOCAL-00014" summary="验证iconPosition">
       <created>1608631209478</created>
@@ -579,7 +560,21 @@
       <option name="project" value="LOCAL" />
       <updated>1626428052889</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="1.tab组件更改为tab-pane&#10;2.toast测试报错&#10;3.完成tab的单元测试">
+      <created>1626854621448</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1626854621448</updated>
+    </task>
+    <task id="LOCAL-00062" summary="创建popover和基本的功能">
+      <created>1627022989560</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1627022989561</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -628,8 +623,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="接入Travis CI 更改测试node版本" />
-    <MESSAGE value="修改package.json" />
     <MESSAGE value="修改svg的问题" />
     <MESSAGE value="新增input样式" />
     <MESSAGE value="修改input样式和错误信息" />
@@ -653,7 +646,9 @@
     <MESSAGE value="注入tabs的eventBus" />
     <MESSAGE value="可以为tabNav添加一个icon" />
     <MESSAGE value="完成tabs功能和样式" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成tabs功能和样式" />
+    <MESSAGE value="1.tab组件更改为tab-pane&#10;2.toast测试报错&#10;3.完成tab的单元测试" />
+    <MESSAGE value="创建popover和基本的功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建popover和基本的功能" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1626789228647">
@@ -684,31 +679,31 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1621925916994" />
-    <state width="1515" height="235" key="GridCell.Tab.0.bottom" timestamp="1626854247454">
+    <state width="1515" height="277" key="GridCell.Tab.0.bottom" timestamp="1626855615371">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1515" height="235" key="GridCell.Tab.0.bottom/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1626854247454" />
+    <state width="1515" height="277" key="GridCell.Tab.0.bottom/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1626855615371" />
     <state width="757" height="305" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1626789934371" />
     <state width="757" height="184" key="GridCell.Tab.0.bottom/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1624958990991" />
     <state width="1515" height="228" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1619238215220" />
-    <state width="1515" height="235" key="GridCell.Tab.0.center" timestamp="1626854247454">
+    <state width="1515" height="277" key="GridCell.Tab.0.center" timestamp="1626855615371">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1515" height="235" key="GridCell.Tab.0.center/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1626854247454" />
+    <state width="1515" height="277" key="GridCell.Tab.0.center/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1626855615371" />
     <state width="757" height="305" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1626789934371" />
     <state width="757" height="184" key="GridCell.Tab.0.center/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1624958990990" />
     <state width="1515" height="228" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1619238215220" />
-    <state width="1515" height="235" key="GridCell.Tab.0.left" timestamp="1626854247453">
+    <state width="1515" height="277" key="GridCell.Tab.0.left" timestamp="1626855615371">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1515" height="235" key="GridCell.Tab.0.left/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1626854247453" />
+    <state width="1515" height="277" key="GridCell.Tab.0.left/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1626855615371" />
     <state width="757" height="305" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1626789934370" />
     <state width="757" height="184" key="GridCell.Tab.0.left/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1624958990989" />
     <state width="1515" height="228" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1619238215220" />
-    <state width="1515" height="235" key="GridCell.Tab.0.right" timestamp="1626854247454">
+    <state width="1515" height="277" key="GridCell.Tab.0.right" timestamp="1626855615371">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1515" height="235" key="GridCell.Tab.0.right/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1626854247454" />
+    <state width="1515" height="277" key="GridCell.Tab.0.right/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1626855615371" />
     <state width="757" height="305" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1626789934371" />
     <state width="757" height="184" key="GridCell.Tab.0.right/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1624958990990" />
     <state width="1515" height="228" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1619238215220" />
@@ -724,9 +719,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="623" y="325" key="VCS.ChangelistChooser/0.0.1536.824@0.0.1536.824" timestamp="1619235943566" />
-    <state x="361" y="127" width="814" height="550" key="Vcs.Push.Dialog.v2" timestamp="1626428056366">
+    <state x="361" y="127" width="814" height="550" key="Vcs.Push.Dialog.v2" timestamp="1627022995061">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
+    <state x="361" y="127" key="Vcs.Push.Dialog.v2/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1627022995061" />
     <state x="361" y="127" key="Vcs.Push.Dialog.v2/0.0.1536.816/-1920.0.1920.1040@0.0.1536.816" timestamp="1626428056366" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1624965881392" />
     <state x="361" y="128" width="814" height="550" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1625059474070" />
@@ -743,10 +739,10 @@
     </state>
     <state x="573" y="322" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1626854288113" />
     <state x="573" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1624958869612" />
-    <state x="596" y="160" width="535" height="536" key="find.popup" timestamp="1626852695086">
+    <state x="596" y="160" width="535" height="536" key="find.popup" timestamp="1627024082177">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="596" y="160" width="535" height="536" key="find.popup/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1626852695086" />
+    <state x="596" y="160" width="535" height="536" key="find.popup/0.0.1536.816/-1920.0.1920.1032@0.0.1536.816" timestamp="1627024082177" />
     <state x="596" y="160" width="535" height="536" key="find.popup/0.0.1536.816/-1920.0.1920.1040@0.0.1536.816" timestamp="1626428133180" />
     <state x="-1705" y="237" width="669" height="677" key="find.popup/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1621846738402" />
     <state x="172" y="188" width="535" height="536" key="find.popup/0.0.1536.824/-1920.0.1920.1040@0.0.1536.824" timestamp="1625104800302" />

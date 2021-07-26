@@ -30,11 +30,23 @@
     </style>
 </head>
 <body>
-<div id="app">
+<div id="app" style="padding: 50px">
 
     <w-popover>
-        <template #content>pop over的内容哈哈哈</template>
-        <w-button>点我</w-button>
+        <template #content>bbbbbbbbbbbb</template>
+        <w-button>我是默认的top</w-button>
+    </w-popover>
+    <w-popover placement="left">
+        <template #content>bbbbbbbbbbbb</template>
+        <w-button>我是left</w-button>
+    </w-popover>
+    <w-popover placement="right">
+        <template #content>bbbbbbbbbbbb</template>
+        <w-button>我是right</w-button>
+    </w-popover>
+    <w-popover placement="bottom">
+        <template #content>bbbbbbbbbbbb</template>
+        <w-button>我是bottom</w-button>
     </w-popover>
     <w-button icon="setting" id="test" icon-position="left" :loading="true">test</w-button>
     <w-button id="test2">test2</w-button>
