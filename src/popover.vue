@@ -60,7 +60,7 @@ export default {
         break
     }
   },
-  destroyed () {
+  beforeDestroy () {
     let { popover, content } = this.$refs
     switch (this.trigger) {
       case 'click':
