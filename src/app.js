@@ -67,7 +67,6 @@ new Vue({
 
 import chai from 'chai'
 import spies from 'chai-spies'
-import toast from "./toast";
 
 chai.use(spies)
 
