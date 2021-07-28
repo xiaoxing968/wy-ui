@@ -1,5 +1,5 @@
 module.exports = {
-    base:'wy-ui',
+    base:'/wy-ui/',
     title: 'Hi Wu',
     description: 'Vue的UI框架',
     themeConfig: {
