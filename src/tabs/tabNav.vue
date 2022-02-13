@@ -2,14 +2,15 @@
   <div class="w-tab-nav__wrapper">
     <div class="w-tab-nav__scroll" :class="tabNavWrapperClasses">
     <tab-bar></tab-bar>
-    <div class="w-tab-nav__item"
-         :class="tabNavClasses(nav)"
-         v-for="(nav, index) in tabPanes" :key="index"
-         :ref=`tab-${nav.name}`
-         @click="clickNavItem(nav)">
-      <w-icon class="icon" :name="nav.icon" v-if="nav.icon"></w-icon>
-      {{ nav.label }}
-    </div>
+      <div class="w-tab-nav__item"
+           :class="tabNavClasses(nav)"
+           v-for="(nav, index) in tabPanes" :key="index"
+           :ref="`tab-${nav.name}`"
+           @click="clickNavItem(nav)"
+      >
+        <w-icon class="icon" :name="nav.icon" v-if="nav.icon"></w-icon>
+        {{ nav.label }}
+      </div>
   </div>
   </div>
 </template>
@@ -26,7 +27,7 @@ export default {
   props: {},
   data() {
     return {
-      initIndex: 0
+      initIndex: 0,
     }
   },
   methods: {

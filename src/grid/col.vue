@@ -79,7 +79,6 @@ export default {
   border-radius: 4px;
   box-sizing: border-box;
   //background: #b4a4a4;
-  border: 1px solid red;
 }
 
 .col-loop(@index) when (@index > 0) {

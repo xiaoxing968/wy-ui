@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper" :class="{error}">
-    <input :value="value" type="text" :disabled="disabled" :readonly="readonly"
+    <input :value="value" type="text" :disabled="disabled" :readonly="readonly" :placeholder="placeholder"
            @change="$emit('change', $event.target.value)"
            @input="$emit('input', $event.target.value)"
            @focus="$emit('focus', $event.target.value)"
@@ -21,7 +21,7 @@ export default {
   props: {
     value: {
       type: String,
-      default: false
+      default: ""
     },
     disabled: {
       type: Boolean,
@@ -30,6 +30,9 @@ export default {
     readonly: {
       type: Boolean,
       default: false
+    },
+    placeholder: {
+      type: String,
     },
     error: {
       type: String,

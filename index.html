@@ -32,13 +32,19 @@
 <body>
 <div id="app" style="padding: 50px">
 
+    <w-tabs v-model="haha">
+        <w-tab-pane name="xingxing" label="星星">星星</w-tab-pane>
+        <w-tab-pane name="yanger" label="羊儿">羊儿</w-tab-pane>
+        <w-tab-pane name="xiaomie" label="小咩">小咩</w-tab-pane>
+        <w-tab-pane name="mie" label="咩嘿嘿">咩嘿嘿</w-tab-pane>
+    </w-tabs>
     <w-popover>
         <template #content>bbbbbbbbbbbb</template>
-        <w-button icon="setting">我是默认的top</w-button>
+        <w-button icon="setting" type="success">我是默认的top</w-button>
     </w-popover>
     <w-popover placement="left">
         <template #content>bbbbbbbbbbbb</template>
-        <w-button>我是left</w-button>
+        <w-button type="warning">我是left</w-button>
     </w-popover>
     <w-popover placement="right" trigger="hover">
         <template #content>bbbbbbbbbbbb</template>
@@ -55,7 +61,7 @@
             我可以关闭
             <w-button @click="contentClose">关闭</w-button>
         </template>
-        <w-button>我是关闭</w-button>
+        <w-button size="mini">我是关闭</w-button>
     </w-popover>
     <w-button icon="setting" id="test" icon-position="left" :loading="true">test</w-button>
     <w-button id="test2">test2</w-button>

@@ -37,7 +37,8 @@ new Vue({
     el: "#app",
     data: {
         color:"green",
-        message:"hi message"
+        message:"hi message",
+        haha:"haha",
     },
     created() {
         // setTimeout(() => {

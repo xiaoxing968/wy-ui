@@ -28,6 +28,9 @@ export default {
     type:{
       type:String,
       default:'normal',
+      validator(val){
+        return val === 'normal' || val === 'success'|| val === 'warning'
+      }
     },
     size:{
       type:String,
@@ -56,12 +59,12 @@ export default {
   justify-content: center;
   align-items: center;
   vertical-align:middle;
-  &:hover {color: @main-hover-color;border-color: @main-active-color;cursor:pointer}
+  &:hover {color: @main-hover-color;border-color: @main-active-color;cursor:pointer;fill:@main-hover-color}
   &:active {border: 1px solid @main-active-color;}
   &:focus {outline: none;}
 
     > .content {order: 2;}
-    > .icon {order: 1; margin-right: .2em}
+    > .icon {order: 1; margin-right: .2em;}
   &.icon-right {
     > .content {order: 1;}
     > .icon {order: 2;margin-left: .2em;margin-right: 0}
@@ -71,8 +74,18 @@ export default {
 .w-button.type-success{
   background:@main-theme-color;
   color: #ffffff;
-  &:hover {background: @main-hover-color; border: @main-border}
-  &:active {border: 1px solid @main-active-color;}
+  fill:#ffffff;
+  border-color: @main-theme-color;
+  &:hover {border-color: @main-hover-color;background: @main-hover-color}
+  &:active {border-color:  @main-active-color;background: @main-active-color}
+}
+.w-button.type-warning{
+  background: @main-warning-color;
+  color: #ffffff;
+  fill:#ffffff;
+  border-color: @main-warning-color;
+  &:hover {background:@main-warning-hover-color; border-color: @main-warning-hover-color;}
+  &:active {border-color: @main-warning-color;background: @main-warning-active-color}
 }
 .size-small{ height: @small-height;padding: 0 .7em;}
 .size-mini{ height: @mini-height; padding: 0 .5em;}

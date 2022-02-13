@@ -10,9 +10,10 @@ const tabMixin = {
     },
     methods: {
         getTabProps () {
-            this.tabsBus.$on('getTabProps', (data) => {
-                this.tabPanes.push(data)
-            })
+                this.tabsBus.$on('getTabProps', (data) => {
+                    this.tabPanes.push(data)
+                })
+
         }
     },
     computed:{
