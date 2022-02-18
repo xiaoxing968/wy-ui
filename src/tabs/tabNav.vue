@@ -8,7 +8,7 @@
            :ref="`tab-${nav.name}`"
            @click="clickNavItem(nav)"
       >
-        <w-icon class="icon" :name="nav.icon" v-if="nav.icon"></w-icon>
+        <icon class="icon" :name="nav.icon" v-if="nav.icon"></icon>
         {{ nav.label }}
       </div>
   </div>
