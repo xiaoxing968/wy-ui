@@ -98,6 +98,7 @@ export default {
 .toast-wrapper {
   position: fixed;
   left: 50%;
+  z-index: 999;
 
   &.toast-top {
     top: @padding-lg;

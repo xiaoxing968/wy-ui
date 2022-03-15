@@ -5,13 +5,13 @@ let currentToast
 export default {
     install (Vue, option) {
         Vue.prototype.$toast = function (toastOptions) {
-            if (arguments.length === 0 || !toastOptions.message) {
+            if (arguments.length === 0 && !toastOptions.message) {
                 console.error('请输入提示信息！')
                 return
             }
             let propsData = getPropsData(typeof arguments[0], toastOptions)
             if (currentToast) {
-                currentToast.close()
+                currentToast.close(true)
             }
             currentToast = createToast(Vue, propsData)
         };

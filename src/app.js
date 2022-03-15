@@ -51,7 +51,7 @@ new Vue({
     methods: {
         showToast(){
             this.$toast({
-                // message: `hi${parseInt(Math.random()*100)}`,
+                message: `hi${parseInt(Math.random()*100)}`,
                 // message: '<i>hi!</i>',
                 // enableHtml: true,
                 duration: 2000,
@@ -59,7 +59,7 @@ new Vue({
                 position: 'middle',
                 closeButton: {
                     text: '知道了',
-                    // icon: 'close'
+                    icon: 'close'
                 }
             })
         }
