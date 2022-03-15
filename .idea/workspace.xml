@@ -26,32 +26,19 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2580482a-a355-4d7f-863d-74c37504aa1c" name="默认更改列表" comment="去掉ClientOnly标签">
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/components/fold.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/components/grid-demos.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/components/input-demos.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/components/layout-demos.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/components/tabs-demos.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/enhanceApp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/fold/mixin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/public/index.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/components/grid.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/components/input.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/components/layout.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/components/tabs.md" afterDir="false" />
+    <list default="true" id="2580482a-a355-4d7f-863d-74c37504aa1c" name="默认更改列表" comment="增加tabs文档">
+      <change afterPath="$PROJECT_DIR$/docs/.vuepress/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/.vuepress/components/popover-demos.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/.vuepress/components/toast-demos.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/components/popover.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/components/toast.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/button-demos.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/button-demos.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/button.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/button.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/.vuepress/enhanceApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/enhanceApp.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/button/button-group.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/button/button-group.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/button/button.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/button/button.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/wy-ui.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/wy-ui.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/grid/col.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/grid/col.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/input.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/input.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mixins/tabsMixin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/mixins/tabsMixin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tabs/tabNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabs/tabNav.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugin/toast.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugin/toast.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/toast.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/toast.vue" afterDir="false" />
     </list>
     <list id="f214803d-c498-413c-ad97-26e91a52f776" name="New changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +83,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/docs/.vuepress/dist" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docs/components" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
@@ -104,6 +91,10 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\2020kunxun\YqVue\docs\components" />
+      <recent name="D:\2020kunxun\YqVue\docs\.vuepress\components" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\2020kunxun\YqVue\docs\.vuepress\components" />
       <recent name="D:\2020kunxun\YqVue\src" />
@@ -263,21 +254,10 @@
       <workItem from="1640705048047" duration="2962000" />
       <workItem from="1642422618576" duration="12000" />
       <workItem from="1642422696966" duration="1824000" />
-      <workItem from="1644763500871" duration="4726000" />
-    </task>
-    <task id="LOCAL-00020" summary="安装chai">
-      <created>1614132243984</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1614132243984</updated>
-    </task>
-    <task id="LOCAL-00021" summary="使用chai.expect添加4个测试用例">
-      <created>1614220023217</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1614220023217</updated>
+      <workItem from="1644763500871" duration="6663000" />
+      <workItem from="1645194829194" duration="1114000" />
+      <workItem from="1645195972016" duration="2721000" />
+      <workItem from="1646555003739" duration="11492000" />
     </task>
     <task id="LOCAL-00022" summary="使用chai.spy监听回调函数">
       <created>1614220697633</created>
@@ -608,7 +588,21 @@
       <option name="project" value="LOCAL" />
       <updated>1627466870857</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="增加tabs文档">
+      <created>1644768300966</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1644768300967</updated>
+    </task>
+    <task id="LOCAL-00070" summary="增加tabs文档">
+      <created>1645196811335</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1645196811336</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -657,7 +651,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="input测试用例" />
     <MESSAGE value="新增col row" />
     <MESSAGE value="重构col 和 row" />
     <MESSAGE value="添加row的align" />
@@ -682,20 +675,29 @@
     <MESSAGE value="创建官网" />
     <MESSAGE value="config base错误" />
     <MESSAGE value="去掉ClientOnly标签" />
-    <option name="LAST_COMMIT_MESSAGE" value="去掉ClientOnly标签" />
+    <MESSAGE value="增加tabs文档" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加tabs文档" />
   </component>
   <component name="WindowStateProjectService">
     <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1640708169671">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1640708169671" />
-    <state x="573" y="321" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1644763585846">
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1647357031005">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="573" y="321" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.816@0.0.1536.816" timestamp="1644763585846" />
-    <state x="500" y="139" width="552" height="536" key="find.popup" timestamp="1644767064656">
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.816@0.0.1536.816" timestamp="1647357031005" />
+    <state x="573" y="321" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1647357028203">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="500" y="139" width="552" height="536" key="find.popup/0.0.1536.816@0.0.1536.816" timestamp="1644767064656" />
+    <state x="573" y="321" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.816@0.0.1536.816" timestamp="1647357028203" />
+    <state x="500" y="139" width="552" height="536" key="find.popup" timestamp="1647348879637">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="500" y="139" width="552" height="536" key="find.popup/0.0.1536.816@0.0.1536.816" timestamp="1647348879637" />
+    <state x="2863" y="313" width="672" height="678" key="search.everywhere.popup" timestamp="1646555091023">
+      <screen x="1920" y="0" width="2560" height="1392" />
+    </state>
+    <state x="2863" y="313" width="672" height="678" key="search.everywhere.popup/0.0.1536.816/1920.0.2560.1392@1920.0.2560.1392" timestamp="1646555091023" />
   </component>
 </project>
