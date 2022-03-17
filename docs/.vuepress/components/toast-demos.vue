@@ -2,7 +2,7 @@
   <div class="demo-button-wrapper">
 
     <h3>基础用法</h3>
-    <p>通过Api调用</p>
+    <p>Api调用，传入 <code>string</code> 使用基本功能</p>
     <div class="component-wrapper">
       <div class="component-wrapper-demo">
         <w-button type="success" @click="$toast('你好！')">单文本提示</w-button>
@@ -18,6 +18,40 @@
       <w-fold :isShowIndex="0"></w-fold>
     </div>
 
+    <h3>更多参数</h3>
+    <p>通过Api 传入 <code>options</code> 参数调用</p>
+    <div class="component-wrapper">
+      <div class="component-wrapper-demo">
+        <w-button type="success" @click="showToast">传入options</w-button>
+      </div>
+      <div class="code-content" style="height: 0;">
+        <div class="code-content-height">
+          <div class="code-user-desc">
+            传入<code>options</code>对象，详细参数见底部表格
+          </div>
+          <pre><code class="vue">{{ optionsContent }}</code></pre>
+        </div>
+      </div>
+      <w-fold :isShowIndex="1"></w-fold>
+    </div>
+
+    <h3>更多功能</h3>
+    <div class="component-wrapper">
+      <div class="component-wrapper-demo">
+        <w-button type="success" @click="showToastGiveHtml">可以传入HTML</w-button>
+        <w-button type="success" @click="showToastClosed">可以关闭</w-button>
+      </div>
+      <div class="code-content" style="height: 0;">
+        <div class="code-content-height">
+          <div class="code-user-desc">
+            传入<code>options</code>对象，详细参数见底部表格
+          </div>
+          <pre><code class="vue">{{ HTMLContent }}</code></pre>
+        </div>
+      </div>
+      <w-fold :isShowIndex="2"></w-fold>
+    </div>
+
 
   </div>
 </template>
@@ -26,75 +60,50 @@
 import WButton from '../../../src/button/button.vue'
 import WPopover from '../../../src/popover'
 import WToast from '../../../src/toast'
-import WIcon from '../../../src/icon'
 import WFold from './fold'
-import Icon from "../../../src/icon";
 
 export default {
   name: 'popover-demos',
   components: {
-    Icon,
-    WButton, WPopover, WIcon, WFold, WToast
+    WButton, WPopover, WFold, WToast
   },
   data() {
     return {
-      normalContent: `
-            <w-popover>
-              <template slot="content">hi.我是向上的popover</template>
-              <w-button type="success">上</w-button>
-            </w-popover>
-            <w-popover placement="left">
-              <template slot="content">hi.我是向左的popover</template>
-              <w-button type="success">左</w-button>
-            </w-popover>
-            <w-popover placement="right">
-              <template slot="content">hi.我是向右的popover</template>
-              <w-button type="success">右</w-button>
-            </w-popover>
-            <w-popover placement="bottom">
-              <template slot="content">hi.我是向下的popover</template>
-              <w-button type="success">下</w-button>
-            </w-popover>`.replace(/^\s*/gm, '').trim(),
-      hoverContent: `
-            <w-popover trigger="hover">
-              <template slot="content">hi.我是向上的popover</template>
-              <w-button type="success">上</w-button>
-            </w-popover>
-            <w-popover placement="left" trigger="hover">
-              <template slot="content">hi.我是向左的popover</template>
-              <w-button type="success">左</w-button>
-            </w-popover>
-            <w-popover placement="right" trigger="hover">
-              <template slot="content">hi.我是向右的popover</template>
-              <w-button type="success">右</w-button>
-            </w-popover>
-            <w-popover placement="bottom" trigger="hover">
-              <template slot="content">hi.我是向下的popover</template>
-              <w-button type="success">下</w-button>
-            </w-popover>`.replace(/^\s*/gm, '').trim(),
-      closeContent: `<w-popover placement="right">
-          <template slot="content" slot-scope="{ contentClose }">
-              来点我关闭弹窗吧：<span @click="contentClose"><icon name="error"></icon></span>
-          </template>
-          <w-button type="success">可关闭</w-button>
-        </w-popover>`.replace(/^\s*/gm, '').trim(),
+      normalContent: `<w-button type="success" @click="$toast('你好！')">单文本提示</w-button>`.replace(/^\s*/gm, '').trim(),
+      optionsContent: `<w-button type="success" @click="showToast">传入options</w-button>`.replace(/^\s*/gm, '').trim(),
+      HTMLContent: `<w-button type="success" @click="showToastGiveHtml">可以传入HTML</w-button>
+                    <w-button type="success" @click="showToastClosed">可以关闭</w-button>
+                    `.replace(/^\s*/gm, '').trim(),
     }
   },
   methods: {
     showToast() {
       this.$toast({
-        message: `hi${parseInt(Math.random() * 100)}`,
-        // message: '<i>hi!</i>',
-        // enableHtml: true,
+        message: `hi，点击按钮关闭`,
+        duration: 2000,
+        position: 'middle',
+      })
+    },
+    showToastGiveHtml() {
+      this.$toast({
+        message: `<strong>我加粗了</strong>`,
+        enableHtml: true,
+        duration: 2000,
+      })
+    },
+    showToastClosed() {
+      this.$toast({
+        message: `可以关闭`,
+        enableHtml: true,
         duration: 2000,
         showClose: true,
         position: 'middle',
         closeButton: {
-          text: '知道了',
+          text: '关闭',
           icon: 'close'
         }
       })
-    }
+    },
   }
 }
 </script>
