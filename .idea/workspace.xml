@@ -26,19 +26,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2580482a-a355-4d7f-863d-74c37504aa1c" name="默认更改列表" comment="增加tabs文档">
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/components/popover-demos.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/components/toast-demos.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/components/popover.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/components/toast.md" afterDir="false" />
+    <list default="true" id="2580482a-a355-4d7f-863d-74c37504aa1c" name="默认更改列表" comment="增加toast文档">
+      <change afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-copy.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/.vuepress/enhanceApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/enhanceApp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/plugin/toast.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugin/toast.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/toast.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/toast.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/icon.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/svg.js" beforeDir="false" />
     </list>
     <list id="f214803d-c498-413c-ad97-26e91a52f776" name="New changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,8 +45,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -96,11 +92,11 @@
       <recent name="D:\2020kunxun\YqVue\docs\.vuepress\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\2020kunxun\YqVue" />
       <recent name="D:\2020kunxun\YqVue\docs\.vuepress\components" />
       <recent name="D:\2020kunxun\YqVue\src" />
       <recent name="D:\2020kunxun\YqVue\docs\.vuepress" />
       <recent name="D:\2020kunxun\YqVue\docs\.vuepress\fold" />
-      <recent name="D:\2020kunxun\YqVue\docs\vuepress" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -257,28 +253,14 @@
       <workItem from="1644763500871" duration="6663000" />
       <workItem from="1645194829194" duration="1114000" />
       <workItem from="1645195972016" duration="2721000" />
-      <workItem from="1646555003739" duration="11492000" />
-    </task>
-    <task id="LOCAL-00022" summary="使用chai.spy监听回调函数">
-      <created>1614220697633</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1614220697633</updated>
-    </task>
-    <task id="LOCAL-00023" summary="使用chai.spy监听回调函数">
-      <created>1614228877686</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1614228877686</updated>
-    </task>
-    <task id="LOCAL-00024" summary="index.html">
-      <created>1614230091468</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1614230091468</updated>
+      <workItem from="1646555003739" duration="15951000" />
+      <workItem from="1647525456223" duration="595000" />
+      <workItem from="1647608820002" duration="319000" />
+      <workItem from="1651151708792" duration="1461000" />
+      <workItem from="1651326150363" duration="19000" />
+      <workItem from="1651331545282" duration="30000" />
+      <workItem from="1653402870664" duration="2386000" />
+      <workItem from="1653406376736" duration="786000" />
     </task>
     <task id="LOCAL-00025" summary="使用karma做自动化测试，Mocha&amp;Chai做单元测试">
       <created>1614256210657</created>
@@ -602,7 +584,28 @@
       <option name="project" value="LOCAL" />
       <updated>1645196811336</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="增加popover文档">
+      <created>1647357084306</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1647357084306</updated>
+    </task>
+    <task id="LOCAL-00072" summary="增加popover文档">
+      <created>1647357105994</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1647357105994</updated>
+    </task>
+    <task id="LOCAL-00073" summary="增加toast文档">
+      <created>1647525530602</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1647525530602</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -610,6 +613,14 @@
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="SHOW_OTHER_BRANCHES" value="true" />
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -651,8 +662,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="新增col row" />
-    <MESSAGE value="重构col 和 row" />
     <MESSAGE value="添加row的align" />
     <MESSAGE value="row 和 col的响应式" />
     <MESSAGE value="row 和 col的测试用例" />
@@ -676,28 +685,37 @@
     <MESSAGE value="config base错误" />
     <MESSAGE value="去掉ClientOnly标签" />
     <MESSAGE value="增加tabs文档" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加tabs文档" />
+    <MESSAGE value="增加popover文档" />
+    <MESSAGE value="增加toast文档" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加toast文档" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1640708169671">
+    <state x="93" y="93" width="1350" height="630" key="DiffContextDialog" timestamp="1647525102531">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1640708169671" />
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1647357031005">
+    <state x="93" y="93" width="1350" height="630" key="DiffContextDialog/0.0.1536.816@0.0.1536.816" timestamp="1647525102531" />
+    <state x="1060" y="451" key="FileChooserDialogImpl" timestamp="1651152230658">
+      <screen x="0" y="0" width="2560" height="1392" />
+    </state>
+    <state x="1060" y="451" key="FileChooserDialogImpl/0.0.2560.1392@0.0.2560.1392" timestamp="1651152230658" />
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1647526048148">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.816@0.0.1536.816" timestamp="1647357031005" />
-    <state x="573" y="321" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1647357028203">
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.816@0.0.1536.816" timestamp="1647526048148" />
+    <state x="573" y="321" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1647525296744">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="573" y="321" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.816@0.0.1536.816" timestamp="1647357028203" />
-    <state x="500" y="139" width="552" height="536" key="find.popup" timestamp="1647348879637">
-      <screen x="0" y="0" width="1536" height="816" />
+    <state x="573" y="321" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.816@0.0.1536.816" timestamp="1647525296744" />
+    <state x="833" y="237" width="920" height="915" key="find.popup" timestamp="1653405741974">
+      <screen x="0" y="0" width="2560" height="1392" />
     </state>
     <state x="500" y="139" width="552" height="536" key="find.popup/0.0.1536.816@0.0.1536.816" timestamp="1647348879637" />
-    <state x="2863" y="313" width="672" height="678" key="search.everywhere.popup" timestamp="1646555091023">
-      <screen x="1920" y="0" width="2560" height="1392" />
+    <state x="833" y="237" width="920" height="915" key="find.popup/0.0.2560.1392@0.0.2560.1392" timestamp="1653405741974" />
+    <state x="943" y="312" width="674" height="679" key="search.everywhere.popup" timestamp="1653406878534">
+      <screen x="0" y="0" width="2560" height="1392" />
     </state>
     <state x="2863" y="313" width="672" height="678" key="search.everywhere.popup/0.0.1536.816/1920.0.2560.1392@1920.0.2560.1392" timestamp="1646555091023" />
+    <state x="566" y="183" width="404" height="398" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1647525563852" />
+    <state x="943" y="312" width="674" height="679" key="search.everywhere.popup/0.0.2560.1392@0.0.2560.1392" timestamp="1653406878534" />
   </component>
 </project>

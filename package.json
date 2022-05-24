@@ -1,55 +1,33 @@
 {
-  "name": "hi-wy-ui",
-  "version": "0.0.3",
-  "description": "咩m的Ui",
-  "main": "dist/index.js",
+  "name": "hello-world",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "start": "parcel index.html --no-cache",
-    "test": "parcel build test/* --no-cache --no-minify && karma start --single-run",
-    "run": "npx parcel index.html --no-cache",
-    "dev-test": "parcel watch test/* --no-cache & karma start",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xiaoxing968/YqVue.git"
-  },
-  "keywords": [
-    "vue",
-    "ui"
-  ],
-  "author": "xiaoxing",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/xiaoxing968/YqVue/issues"
-  },
-  "homepage": "https://github.com/xiaoxing968/YqVue#readme",
   "dependencies": {
-    "vue": "^2.6.14",
-    "vue-hot-reload-api": "^2.3.4"
-  },
-  "alias": {
-    "vue": "./node_modules/vue/dist/vue.common.js"
+    "core-js": "^2.6.5",
+    "vue": "^2.6.10"
   },
   "devDependencies": {
-    "@vue/component-compiler-utils": "^3.2.0",
-    "chai": "^4.3.0",
-    "chai-spies": "^1.0.0",
-    "karma": "^6.1.1",
-    "karma-chai": "^0.1.0",
-    "karma-chai-spies": "^0.1.4",
-    "karma-chrome-launcher": "^3.1.0",
-    "karma-mocha": "^2.0.1",
-    "karma-sinon-chai": "^2.0.2",
-    "less": "^4.1.1",
-    "less-loader": "^7.3.0",
-    "mocha": "^8.3.0",
-    "parcel-bundler": "^1.12.4",
-    "sass": "^1.30.0",
-    "sinon": "^9.2.4",
-    "sinon-chai": "^3.5.0",
-    "vue-template-compiler": "^2.6.14",
-    "vuepress": "^1.8.2"
-  }
+    "@vue/cli-plugin-babel": "^3.12.0",
+    "@vue/cli-plugin-unit-mocha": "^3.12.0",
+    "@vue/cli-service": "^3.12.0",
+    "@vue/test-utils": "1.0.0-beta.29",
+    "chai": "^4.1.2",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
 }
