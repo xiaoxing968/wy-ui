@@ -26,15 +26,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2580482a-a355-4d7f-863d-74c37504aa1c" name="默认更改列表" comment="增加toast文档">
-      <change afterPath="$PROJECT_DIR$/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-copy.json" afterDir="false" />
+    <list default="true" id="2580482a-a355-4d7f-863d-74c37504aa1c" name="默认更改列表" comment="改为vue-cli">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/icon.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/svg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
     </list>
     <list id="f214803d-c498-413c-ad97-26e91a52f776" name="New changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,16 +82,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\2020kunxun\YqVue\src" />
+      <recent name="D:\2020kunxun\YqVue" />
+      <recent name="D:\2020kunxun\YqVue\docs\.vuepress\components" />
+      <recent name="D:\2020kunxun\YqVue\docs\.vuepress" />
+      <recent name="D:\2020kunxun\YqVue\docs\.vuepress\fold" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\2020kunxun\YqVue\docs\components" />
       <recent name="D:\2020kunxun\YqVue\docs\.vuepress\components" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\2020kunxun\YqVue" />
-      <recent name="D:\2020kunxun\YqVue\docs\.vuepress\components" />
-      <recent name="D:\2020kunxun\YqVue\src" />
-      <recent name="D:\2020kunxun\YqVue\docs\.vuepress" />
-      <recent name="D:\2020kunxun\YqVue\docs\.vuepress\fold" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -260,14 +255,8 @@
       <workItem from="1651326150363" duration="19000" />
       <workItem from="1651331545282" duration="30000" />
       <workItem from="1653402870664" duration="2386000" />
-      <workItem from="1653406376736" duration="786000" />
-    </task>
-    <task id="LOCAL-00025" summary="使用karma做自动化测试，Mocha&amp;Chai做单元测试">
-      <created>1614256210657</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1614256210658</updated>
+      <workItem from="1653406376736" duration="2729000" />
+      <workItem from="1653488519649" duration="311000" />
     </task>
     <task id="LOCAL-00026" summary="接入Travis CI">
       <created>1614256238755</created>
@@ -605,7 +594,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647525530602</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="改为vue-cli">
+      <created>1653407237995</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1653407237996</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -662,7 +658,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加row的align" />
     <MESSAGE value="row 和 col的响应式" />
     <MESSAGE value="row 和 col的测试用例" />
     <MESSAGE value="增加layout布局" />
@@ -687,7 +682,8 @@
     <MESSAGE value="增加tabs文档" />
     <MESSAGE value="增加popover文档" />
     <MESSAGE value="增加toast文档" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加toast文档" />
+    <MESSAGE value="改为vue-cli" />
+    <option name="LAST_COMMIT_MESSAGE" value="改为vue-cli" />
   </component>
   <component name="WindowStateProjectService">
     <state x="93" y="93" width="1350" height="630" key="DiffContextDialog" timestamp="1647525102531">
@@ -698,10 +694,11 @@
       <screen x="0" y="0" width="2560" height="1392" />
     </state>
     <state x="1060" y="451" key="FileChooserDialogImpl/0.0.2560.1392@0.0.2560.1392" timestamp="1651152230658" />
-    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1647526048148">
-      <screen x="0" y="0" width="1536" height="816" />
+    <state x="602" y="241" key="Vcs.Push.Dialog.v2" timestamp="1653407498588">
+      <screen x="0" y="0" width="2560" height="1392" />
     </state>
     <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.816@0.0.1536.816" timestamp="1647526048148" />
+    <state x="602" y="241" key="Vcs.Push.Dialog.v2/0.0.2560.1392@0.0.2560.1392" timestamp="1653407498588" />
     <state x="573" y="321" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1647525296744">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
