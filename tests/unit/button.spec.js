@@ -1,9 +1,14 @@
-const expect = chai.expect;
-import Vue from 'vue'
-import Button from '../src/button/button'
+import chai, {expect} from 'chai'
+import sinon from 'sinon'
+import sinonChai from 'sinon-chai'
+import Vue from 'vue/dist/vue.esm.js'
+
+import Button from '@/button/button'
 
 Vue.config.productionTip = false
 Vue.config.devtools = false
+
+chai.use(sinonChai)
 
 describe ('Button', () => {
     // BDD 行为驱动测试

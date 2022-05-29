@@ -2,11 +2,17 @@ const layoutMixins = {
     props: {
         height: {
             type: [Number, String],
-            default: 60
+            default: 60,
+            validator (value) {
+                return !isNaN(Number(value))
+            }
         },
         width: {
             type: [Number, String],
-            default: 200
+            default: 200,
+            validator (value) {
+                return !isNaN(Number(value))
+            }
         }
     },
     methods: {

@@ -55,6 +55,7 @@ export default {
   },
   mounted() {
     this.emitToTabBar(this.initIndex)
+    console.log(this.tabPanes, 'tabPanes')
   },
   updated() {
     this.emitToTabBar(this.initIndex)

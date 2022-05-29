@@ -1,8 +1,13 @@
 import Vue from "vue";
 import App from "./App.vue";
-
+import toast from "./toast.vue"
 Vue.config.productionTip = false;
 
-new Vue({
-    render: h => h(App)
-}).$mount("#app");
+Vue.use(toast)
+
+const vueApp = new Vue({
+    render: (h) => h(App),
+})
+vueApp.$mount("#app")
+
+export default vueApp

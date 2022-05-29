@@ -7,12 +7,11 @@
 <script>
 export default {
   name: 'WContainer',
-  components: {
-  },
+  components: {},
   props: {
     direction: {
       type: String,
-      validator (value) {
+      validator(value) {
         return ['vertical', 'horizontal'].includes(value);
       }
     }
@@ -20,11 +19,13 @@ export default {
   data() {
     return {
       containerClasses: {
-        ['has-aside']: false
+        ['has-aside']: false,
+        vertical: this.direction === 'vertical',
+        horizontal: this.direction === 'horizontal',
       }
     }
   },
-  mounted () {
+  mounted() {
     this.$children.forEach(vm => {
       if (vm.$options.name === 'WAside') {
         this.containerClasses['has-aside'] = true
@@ -39,8 +40,17 @@ export default {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+
   &.has-aside {
     flex-direction: row;
+  }
+
+  &.horizontal {
+    flex-direction: row;
+  }
+
+  &.visibility {
+    flex-direction: column;
   }
 }
 </style>
