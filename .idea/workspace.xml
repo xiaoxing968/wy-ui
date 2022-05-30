@@ -29,23 +29,18 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2580482a-a355-4d7f-863d-74c37504aa1c" name="默认更改列表" comment="改为vue-cli。解决上一版本因入口文件被移动到错误的位置，导致无法启动的问题">
+    <list default="true" id="2580482a-a355-4d7f-863d-74c37504aa1c" name="默认更改列表" comment="单元测试改为test:unit">
+      <change afterPath="$PROJECT_DIR$/src/cascader/cascaderMixins.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cascader/cascaderNodes.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cascader/dataSource.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cascader/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/svg.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/karma.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/karma.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/container.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/container.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mixins/layoutMixins.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/mixins/layoutMixins.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tabs/tabNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabs/tabNav.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/button.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/button.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/col.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/col.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/input.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/input.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/layout.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/layout.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/popover.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/xpopover.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/row.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/row.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/tabs.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/tabs.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/toast.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/toast.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/wy-ui.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/wy-ui.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/icon.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/input.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/input.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/toast.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/toast.spec.js" afterDir="false" />
     </list>
     <list id="f214803d-c498-413c-ad97-26e91a52f776" name="New changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,9 +55,6 @@
         <option value="JavaScript File" />
       </list>
     </option>
-  </component>
-  <component name="Git.Pull.Settings">
-    <option name="BRANCH" value="main" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -81,14 +73,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "yarn",
-    "settings.editor.selected.configurable": "terminal",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\2020kunxun\YqVue\test\unit" />
@@ -274,14 +266,8 @@
       <workItem from="1653804951761" duration="49000" />
       <workItem from="1653811410535" duration="416000" />
       <workItem from="1653811950307" duration="96000" />
-      <workItem from="1653812072536" duration="142000" />
-    </task>
-    <task id="LOCAL-00027" summary="接入Travis CI">
-      <created>1614302835060</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1614302835060</updated>
+      <workItem from="1653812072536" duration="5788000" />
+      <workItem from="1653924069589" duration="322000" />
     </task>
     <task id="LOCAL-00028" summary="接入Travis CI 更改测试node版本">
       <created>1614303709639</created>
@@ -619,7 +605,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653488933081</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="单元测试改为test:unit">
+      <created>1653812415674</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1653812415674</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -675,7 +668,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="row 和 col的测试用例" />
     <MESSAGE value="增加layout布局" />
     <MESSAGE value="layout布局的测试用例" />
     <MESSAGE value="文件目录结构重构 拆分部分less作为公共属性" />
@@ -700,7 +692,8 @@
     <MESSAGE value="增加toast文档" />
     <MESSAGE value="改为vue-cli" />
     <MESSAGE value="改为vue-cli。解决上一版本因入口文件被移动到错误的位置，导致无法启动的问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="改为vue-cli。解决上一版本因入口文件被移动到错误的位置，导致无法启动的问题" />
+    <MESSAGE value="单元测试改为test:unit" />
+    <option name="LAST_COMMIT_MESSAGE" value="单元测试改为test:unit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

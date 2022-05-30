@@ -61,7 +61,7 @@ export default {
     &:hover {border-color: @main-theme-color;}
     &:focus {box-shadow: inset 0 1px 3px @box-shadow-color;outline: none;}
     &[disabled],
-    &[readonly] {border-color: #bbb;color: #bbb;cursor: not-allowed;}
+    &[readonly] {border-color: #bbb;color: #bbb;}
   }
   &.error {
     > input {border-color: @red;}

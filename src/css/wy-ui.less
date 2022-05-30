@@ -28,7 +28,7 @@
 
 //font
 @font-size-normal:14px;
-
+@font-size-sm: 12px;
 //padding
 @padding-base: 4px;
 @padding-sm: 8px;
@@ -55,3 +55,31 @@
 @small-height: 32px;
 @mini-height: 27px;
 @button-border: 1px solid @gray-5;
+
+// cascader
+@cascader-trigger-height: @item-height-regular;
+@cascader-popover-min-width: 70px;
+@cascader-active-color: @main-theme-color;
+
+.w-scrollbar {
+  &::-webkit-scrollbar {
+    width: 2px;
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 4px;
+  }
+
+  &:hover::-webkit-scrollbar-thumb {
+    @media (any-hover: hover) {
+      background: hsla(0, 0%, 40%, 0.3);
+    }
+  }
+
+  &:hover::-webkit-scrollbar-track {
+    @media (any-hover: hover) {
+      background: hsla(0, 0%, 53%, 0.1);
+    }
+  }
+}
