@@ -1,6 +1,17 @@
 import Vue from 'vue'
 import './public/index.less'
 import toast from '../../src/plugin/toast'
+import hljs from 'highlight.js'
+
+//样式文件
+import 'highlight.js/styles/nord.css'
+Vue.directive('highlight',function (el) {
+        let blocks = el.querySelectorAll('pre code');
+        blocks.forEach((block)=>{
+                hljs.highlightBlock(block)
+        })
+})
+
 export default ({
         Vue, // VuePress 正在使用的 Vue 构造函数
                     // options, // 附加到根实例的一些选项

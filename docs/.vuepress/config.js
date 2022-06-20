@@ -1,17 +1,23 @@
 module.exports = {
     base:'/wy-ui/',
-    title: 'Hi Wu',
+    title: 'Hello Wy-ui',
     description: 'Vue的UI框架',
+    head: [
+        ['link', { rel: 'icon', href: '/logo.png' }]
+    ],
     themeConfig: {
-        head: [
-            ['link', { rel: 'icon', href: '/logo.png' }]
+        nav: [
+            { text: '主页', link: '/' },
+            { text: '文档', link: '/get-started/' },
+            { text: 'Vue3版本', link: 'http://xxymie.com/#/' },
+            { text: 'Github', link: 'https://github.com/xiaoxing968' },
         ],
         sidebar: [
             {
                 title: '入门',
                 collapsable: false,
                 children: [
-                    '/install/',
+                    '/introduction/',
                     '/get-started/',
                 ]
             },
@@ -26,6 +32,7 @@ module.exports = {
                     '/components/tabs',
                     '/components/popover',
                     '/components/toast',
+                    '/components/cascarder',
                 ]
             }
         ]

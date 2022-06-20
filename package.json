@@ -1,16 +1,19 @@
 {
-  "name": "hello-world",
-  "version": "0.1.0",
+  "name": "hi-wy-ui",
+  "version": "0.0.4",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit:old": "vue-cli-service test:unit",
     "test": "karma start --single-run",
-    "test:unit": "karma start"
+    "test:unit": "karma start",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "highlight.js": "^11.5.1",
     "vue": "^2.5.17"
   },
   "devDependencies": {
