@@ -1,6 +1,10 @@
 <template>
   <div class="wrapper" :class="{error}">
-    <input :value="value" type="text" :disabled="disabled" :readonly="readonly" :placeholder="placeholder"
+    <input :value="value" type="text"
+           :disabled="disabled"
+           :readonly="readonly"
+           :placeholder="placeholder"
+           :style="inputStyle"
            @change="$emit('change', $event.target.value)"
            @input="$emit('input', $event.target.value)"
            @focus="$emit('focus', $event.target.value)"
@@ -10,11 +14,27 @@
       <w-icon name="error" class="icon-error"></w-icon>
       <span class="errorMessage">{{ error }}</span>
     </template>
+    <div v-if="hasRightIcon" ref="rightIcons" class="input-icons right" @click.stop="clearValue">
+      <w-icon v-if="rightIcon && !$slots['right-icon']"
+              class="right-icon" :name="rightIcon">
+      </w-icon>
+      <slot v-if="$slots['right-icon']" name="right-icon"></slot>
+      <w-icon v-if="clearable" class="clear-icon"
+              :class="{'visible': clearIconVisible}"
+              name="close"
+              >
+      </w-icon>
+    </div>
+    <div v-if="hasLeftIcon" class="input-icons left">
+      <slot v-if="$slots['left-icon']" name="left-icon"></slot>
+      <w-icon v-else :name="leftIcon" class="left-icon"></w-icon>
+    </div>
   </div>
 </template>
 
 <script>
 import wIcon from "./icon";
+
 export default {
   components: {wIcon},
   name: "wInput",
@@ -36,37 +56,133 @@ export default {
     },
     error: {
       type: String,
+    },
+    clearable: {
+      type: Boolean,
+      default: false
+    },
+    rightIcon: {
+      type: String,
+      default: ''
+    },
+    leftIcon: {
+      type: String,
+      default: ''
     }
   },
   data() {
     return {}
   },
-  created() {
+  created() {},
+  methods: {
+    clearValue() {
+      if (this.clearIconVisible) {
+        this.$emit('input', '')
+        this.$emit('clear', '')
+      }
+    }
   },
-  methods: {},
+  computed: {
+    hasLeftIcon() {
+      return this.leftIcon || this.$slots['left-icon']
+    },
+    hasRightIcon() {
+      return this.clearable || this.rightIcon || this.$slots['right-icon']
+    },
+    clearIconVisible() {
+      return this.value.length > 0 && this.clearable
+    },
+    inputStyle() {
+      const {hasLeftIcon, hasRightIcon} = this
+      return {
+        paddingRight: hasRightIcon ? '2.5em' : '1em',
+        paddingLeft: hasLeftIcon ? '2.5em' : '1em'
+      }
+    }
+  }
 }
 
 </script>
 <style lang="less" scoped>
 @import "./css/app";
+
 @height: 32px;
 @border-color: #999;
 @border-color-hover: #666;
 @box-shadow-color: rgba(0, 0, 0, 0.5);
 @red: #F1453D;
-.wrapper {font-size: @font-size-normal;display: inline-block;
+.wrapper {
+  font-size: @font-size-normal;
+  display: inline-block;
   //font-size: $font-size;display: inline-flex;align-items: center;
-  > :not(:last-child) {margin-right: .2em;}
-  > input {height: 32px;border: 1px solid @border-color;border-radius: 4px;padding: 0 8px;font-size: inherit;
-    &:hover {border-color: @main-theme-color;}
-    &:focus {box-shadow: inset 0 1px 3px @box-shadow-color;outline: none;}
+  > :not(:last-child) {
+    margin-right: .2em;
+  }
+
+  > input {
+    height: 32px;
+    border: 1px solid @border-color;
+    border-radius: 4px;
+    padding: 0 8px;
+    font-size: inherit;
+
+    &:hover {
+      border-color: @main-theme-color;
+    }
+
+    &:focus {
+      box-shadow: inset 0 1px 3px @box-shadow-color;
+      outline: none;
+    }
+
     &[disabled],
-    &[readonly] {border-color: #bbb;color: #bbb;}
+    &[readonly] {
+      border-color: #bbb;
+      color: #bbb;
+    }
   }
+
   &.error {
-    > input {border-color: @red;}
+    > input {
+      border-color: @red;
+    }
   }
-  .icon-error {fill: @red;}
-  .errorMessage {color: @red;}
+
+  .icon-error {
+    fill: @red;
+  }
+
+  .errorMessage {
+    color: @red;
+  }
+}
+.input-icons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+
+  &.right { right: 1em; }
+
+  &.left { left: 1em; }
+
+  .w-icon {
+    color: @icon-color-light;
+    font-size: @font-size-md15;
+
+    &.clear-icon {
+      margin-left: @padding-sm;
+      display: none;
+      transition: all @animate-duration-regular;
+      @media (any-hover: hover) {
+        &:hover {
+          color: @gray-6;
+        }
+      }
+
+      &.visible { display: inline-block; }
+    }
+  }
 }
 </style>

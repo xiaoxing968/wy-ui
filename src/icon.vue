@@ -4,9 +4,12 @@
   </svg>
 </template>
 <script>
-import './svg'
+
 export default{
-  props:['name']
+  props:['name'],
+  mounted() {
+    import('./svg').then()
+  }
 }
 </script>
 <style lang="less">

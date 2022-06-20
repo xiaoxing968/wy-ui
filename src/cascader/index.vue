@@ -113,6 +113,7 @@ export default {
       }
     },
     getSelectedValue() {
+      console.log(this.selectedNodes, 'this.selectedNodes')
       this.selectedLabels = this.selectedNodes.map(node => node[this.labelName]).join(' / ')
     },
     getSelectedNodes(source) {
@@ -176,6 +177,7 @@ export default {
   padding: 0;
   max-width: 100%;
   min-width: @cascader-popover-min-width;
+  border: none;
 
   &.loading {
     height: 30px;

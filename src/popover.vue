@@ -28,13 +28,18 @@ export default {
       validator (value) {
         return [ 'click', 'hover' ].indexOf(value) > -1
       }
+    },
+    contentClassName: {
+      type: String,
+      default: ''
     }
   },
   computed: {
     contentClasses () {
-      let { placement } = this
+      let { placement, contentClassName } = this
       return [
-        `popover-content__${placement}`
+        `popover-content__${placement}`,
+        contentClassName
       ]
     }
   },
@@ -137,7 +142,7 @@ export default {
 }
 </script>
 
-<style scoped lang="less">
+<style lang="less">
 @import url('./css/app');
 .w-popover-wrapper {
   position: relative;

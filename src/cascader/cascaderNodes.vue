@@ -63,9 +63,10 @@ export default {
       return lazyLoad ? !node[isLeafName] && loadingNodeValue !== node[valueName] : node[childrenName] && node[childrenName].length > 0
     },
     onClickLabel(node) {
-      this.$parent.selectedNode = null;
+      this.$parent.selectedNode = null
       this.selectedNode = node
       this.newValue.splice(this.level)
+      console.log(this.newValue, this.level, node)
       this.$set(this.newValue, this.level, node)
       this.changeHandler(node)
     },
