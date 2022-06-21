@@ -16,3 +16,23 @@ sidebarDepth: 2
 <ClientOnly>
  <layout-demos></layout-demos>
 </ClientOnly>
+
+### Container Attributes
+|参数| 说明 |  类型  | 可选值 | 默认值 |
+| :-------------: |:-------------:| :-----:|:-----:|:-----:|
+| direction | 子元素的排列方向 |    String | horizontal / vertical | 子元素中有 `x-header` 或 `x-footer` 时为 vertical，否则为 horizontal
+
+### Header Attributes
+|参数|  说明  |  类型  | 可选值 | 默认值 |
+| :-------------: |:----:| :-----:|:-----:|:-----:|
+| height | 顶栏高度 |    String/Number | -- | 60
+
+### Aside Attributes
+|参数| 说明 |  类型  | 可选值 | 默认值 |
+| :-------------: |:-------------:| :-----:|:-----:|:-----:|
+| width | 侧边栏宽度 |    String/Number | -- | 200
+
+### Footer Attributes
+|参数| 说明 |  类型  | 可选值 | 默认值 |
+| :-------------: |:-------------:| :-----:|:-----:|:-----:|
+| height | 底栏高度 |    String/Number | -- | 60

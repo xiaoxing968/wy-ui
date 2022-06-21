@@ -55,7 +55,7 @@
 
 
     <h3>为标签传入icon</h3>
-    <p>或者通过 <code>slot</code> 传入自定义内容</p>
+<!--    <p>或者通过 <code>slot</code> 传入自定义内容</p>-->
     <div class="component-wrapper">
       <div class="component-wrapper-demo">
         <w-tabs v-model="active2">

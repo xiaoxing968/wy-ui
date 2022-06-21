@@ -32,7 +32,7 @@ module.exports = {
                     '/components/tabs',
                     '/components/popover',
                     '/components/toast',
-                    '/components/cascarder',
+                    '/components/cascader',
                 ]
             }
         ]

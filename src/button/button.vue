@@ -9,34 +9,37 @@
 </template>
 <script>
 import wIcon from "../icon"
+
 export default {
-  name:'w-button',
+  name: 'w-button',
   components: {wIcon},
   props: {
-    icon: {},
+    icon: {
+      type: String
+    },
     iconPosition: {
       type: String,
       default: "left",
-      validator(val){
+      validator(val) {
         return val === 'left' || val === 'right'
       }
     },
-    loading:{
+    loading: {
       type: Boolean,
-      default:false
+      default: false
     },
-    type:{
-      type:String,
-      default:'normal',
-      validator(val){
-        return val === 'normal' || val === 'success'|| val === 'warning'
+    type: {
+      type: String,
+      default: 'normal',
+      validator(val) {
+        return val === 'normal' || val === 'success' || val === 'warning'
       }
     },
-    size:{
-      type:String,
-      default:'normal',
-      validator(val){
-        return val === 'normal' || val === 'small'|| val === 'mini'
+    size: {
+      type: String,
+      default: 'normal',
+      validator(val) {
+        return val === 'normal' || val === 'small' || val === 'mini'
       }
     },
   }
@@ -44,10 +47,16 @@ export default {
 </script>
 <style lang="less" scoped>
 @import url('../css/app');
+
 @keyframes spin {
-  0% {transform:rotate(0deg)}
-  100% { transform: rotate(360deg)}
+  0% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
 }
+
 .w-button {
   font-size: @font-size-normal;
   height: @normal-height;
@@ -58,35 +67,90 @@ export default {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  vertical-align:middle;
-  &:hover {color: @main-hover-color;border-color: @main-active-color;cursor:pointer;fill:@main-hover-color}
-  &:active {border: 1px solid @main-active-color;}
-  &:focus {outline: none;}
+  vertical-align: middle;
 
-    > .content {order: 2;}
-    > .icon {order: 1; margin-right: .2em;}
-  &.icon-right {
-    > .content {order: 1;}
-    > .icon {order: 2;margin-left: .2em;margin-right: 0}
+  &:hover {
+    color: @main-hover-color;
+    border-color: @main-active-color;
+    cursor: pointer;
+    fill: @main-hover-color
   }
-  .loading{ animation:spin 1.2s infinite linear }
+
+  &:active {
+    border: 1px solid @main-active-color;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  > .content {
+    order: 2;
+  }
+
+  > .icon {
+    order: 1;
+    margin-right: .2em;
+  }
+
+  &.icon-right {
+    > .content {
+      order: 1;
+    }
+
+    > .icon {
+      order: 2;
+      margin-left: .2em;
+      margin-right: 0
+    }
+  }
+
+  .loading {
+    animation: spin 1.2s infinite linear
+  }
 }
-.w-button.type-success{
-  background:@main-theme-color;
+
+.w-button.type-success {
+  background: @main-theme-color;
   color: #ffffff;
-  fill:#ffffff;
+  fill: #ffffff;
   border-color: @main-theme-color;
-  &:hover {border-color: @main-hover-color;background: @main-hover-color}
-  &:active {border-color:  @main-active-color;background: @main-active-color}
+
+  &:hover {
+    border-color: @main-hover-color;
+    background: @main-hover-color
+  }
+
+  &:active {
+    border-color: @main-active-color;
+    background: @main-active-color
+  }
 }
-.w-button.type-warning{
+
+.w-button.type-warning {
   background: @main-warning-color;
   color: #ffffff;
-  fill:#ffffff;
+  fill: #ffffff;
   border-color: @main-warning-color;
-  &:hover {background:@main-warning-hover-color; border-color: @main-warning-hover-color;}
-  &:active {border-color: @main-warning-color;background: @main-warning-active-color}
+
+  &:hover {
+    background: @main-warning-hover-color;
+    border-color: @main-warning-hover-color;
+  }
+
+  &:active {
+    border-color: @main-warning-color;
+    background: @main-warning-active-color
+  }
 }
-.size-small{ height: @small-height;padding: 0 .7em;}
-.size-mini{ height: @mini-height; padding: 0 .5em;}
+
+.size-small {
+  height: @small-height;
+  padding: 0 .7em;
+}
+
+.size-mini {
+  height: @mini-height;
+  padding: 0 .5em;
+}
 </style>

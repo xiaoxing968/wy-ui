@@ -5,6 +5,7 @@
 @main-theme-color: #67C23A;
 @main-hover-color: #85ce61;
 @main-active-color: #5daf34;
+@main-shadow-color: rgba(93, 175, 52, 0.2);
 @main-warning-color: #e6a23c;
 @main-warning-hover-color: #ebb563;
 @main-warning-active-color: #cf9236;
@@ -65,6 +66,15 @@
 
 @icon-color-light: @gray-5;
 @icon-color-dark: @gray-6;
+
+@keyframes spin {
+  0% {transform:rotate(0deg)}
+  100% { transform: rotate(360deg)}
+}
+
+.w-loading {
+  animation: spin 2s infinite linear;
+}
 .w-scrollbar {
   &::-webkit-scrollbar {
     width: 2px;

@@ -107,9 +107,9 @@ export default {
 @import "./css/app";
 
 @height: 32px;
-@border-color: #999;
+@border-color: #d9d9d9;
 @border-color-hover: #666;
-@box-shadow-color: rgba(0, 0, 0, 0.5);
+@box-shadow-color: #67c23a36;
 @red: #F1453D;
 .wrapper {
   font-size: @font-size-normal;
@@ -131,7 +131,7 @@ export default {
     }
 
     &:focus {
-      box-shadow: inset 0 1px 3px @box-shadow-color;
+      box-shadow: 0 0 0 2px @main-shadow-color;
       outline: none;
     }
 

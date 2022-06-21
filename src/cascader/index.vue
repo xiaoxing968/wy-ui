@@ -183,8 +183,7 @@ export default {
     height: 30px;
     &:extend(.flex-box);
     justify-content: center;
-
-    .w-icon { color: @gray-6; }
+    .w-icon { color: @gray-6;}
   }
 }
 </style>
