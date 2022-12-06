@@ -42,7 +42,6 @@ describe('Tabs和tab', () => {
             vm.$nextTick(() => {
                 const activeNavBar = vm.$el.querySelectorAll('.nav-active')
                 expect(activeNavBar.length).to.eq(1)
-                console.log(activeNavBar[0].innerHTML.trim(),'activeNavBar[0].innerHTML')
                 expect(activeNavBar[0].innerHTML.trim()).to.include('小羊')
                 vm.$el.remove()
                 vm.$destroy()
@@ -66,9 +65,9 @@ describe('Tabs和tab', () => {
             div = document.createElement('div')
             document.body.appendChild(div)
         })
-        afterEach(() => {
-            div.remove()
-        })
+        // afterEach(() => {
+        //     div.remove()
+        // })
         it('可以设置label', (done) => {
             div.innerHTML = `
         <w-tabs value="kaixin">
@@ -79,8 +78,8 @@ describe('Tabs和tab', () => {
                 el: div
             })
             setTimeout(() => {
-                const tabNav = vm.$el.querySelector('.wb-nav__item')
-                expect(tabNav.innerHTML).to.eq('kaixin')
+                const tabNav = vm.$el.querySelector('.w-tab-nav__item')
+                expect(tabNav.innerHTML.replace('<!---->', '').trim()).to.eq('kaixin')
                 vm.$el.remove()
                 vm.$destroy()
                 done()
@@ -96,7 +95,7 @@ describe('Tabs和tab', () => {
                 el: div
             })
             setTimeout(() => {
-                const tabNav = vm.$refs.tabs.$refs.tabNav.$refs['tab-kaixin']
+                const tabNav = vm.$refs.tabs.$refs.tabNav.$refs['tab-kaixin'][0]
                 expect(tabNav.classList.contains('w-tab-nav__item-kaixin')).to.eq(true)
                 vm.$el.remove()
                 vm.$destroy()
@@ -116,10 +115,10 @@ describe('Tabs和tab', () => {
                 const tabNav = vm.$el.querySelector('.w-tab-nav__item')
                 expect(tabNav.classList.contains('nav-disabled')).to.eq(true)
                 const tabsNode = vm.$refs.tabs
-                const callback = sinon.fake()
+                    const callback = sinon.fake()
                 tabsNode.$on('change', callback)
                 tabNav.click()
-                expect(callback).to.have.not.been.called
+                expect(callback).to.have.not.been.all
                 vm.$el.remove()
                 vm.$destroy()
                 done()
@@ -154,8 +153,8 @@ describe('Tabs和tab', () => {
                 expect(vm.selectTab).to.eq('kuaile')
                 vm.$el.remove()
                 vm.$destroy()
-                done()
             })
+            done()
         })
     })
 })

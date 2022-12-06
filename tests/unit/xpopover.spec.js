@@ -14,8 +14,6 @@ describe('Popover', () => {
         beforeEach(() => {
             div = document.createElement('div')
             document.body.appendChild(div)
-            console.log('beforeEach')
-            console.log(div)
         })
         afterEach(() => {
             div.remove()
@@ -31,10 +29,8 @@ describe('Popover', () => {
             const vm = new Vue({
                 el: div
             })
-            console.log(vm, '--')
             vm.$el.querySelector('button').click()
             vm.$nextTick(() => {
-                console.log(vm.$refs, 'ref')
                 const {content} = vm.$refs.test.$refs
                 expect(content.classList.contains('popover-content__bottom')).to.eq(true)
                 vm.$el.remove()

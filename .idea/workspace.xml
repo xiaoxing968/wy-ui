@@ -30,16 +30,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2580482a-a355-4d7f-863d-74c37504aa1c" name="默认更改列表" comment="单元测试改为test:unit">
-      <change afterPath="$PROJECT_DIR$/src/cascader/cascaderMixins.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cascader/cascaderNodes.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cascader/dataSource.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cascader/index.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/svg.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/wy-ui.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/wy-ui.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/icon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/icon.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/input.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/input.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tabs/tabNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabs/tabNav.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/toast.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/toast.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/unit/tabs.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/tabs.spec.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/unit/toast.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/toast.spec.js" afterDir="false" />
     </list>
     <list id="f214803d-c498-413c-ad97-26e91a52f776" name="New changelist" comment="" />
@@ -65,6 +63,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/package.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/icon.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/svg.js" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -73,15 +76,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/codes/wy-ui/src",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\codes\wy-ui\src" />
+      <recent name="D:\2020kunxun\YqVue\docs\components" />
+      <recent name="D:\2020kunxun\YqVue\docs\.vuepress\components" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\2020kunxun\YqVue\test\unit" />
       <recent name="D:\2020kunxun\YqVue\src" />
@@ -89,17 +104,13 @@
       <recent name="D:\2020kunxun\YqVue\docs\.vuepress\components" />
       <recent name="D:\2020kunxun\YqVue\docs\.vuepress" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\2020kunxun\YqVue\docs\components" />
-      <recent name="D:\2020kunxun\YqVue\docs\.vuepress\components" />
-    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="join lin" />
     </option>
   </component>
-  <component name="RunManager" selected="npm.run">
+  <component name="RunManager" selected="npm.test">
     <configuration default="true" type="js.build_tools.npm" singleton="false">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -113,11 +124,31 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="docs:dev" type="js.build_tools.npm" singleton="false" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="docs:dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="run" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
         <script value="run" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="serve" type="js.build_tools.npm" singleton="false" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="serve" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -145,12 +176,16 @@
     </configuration>
     <list>
       <item itemvalue="npm.run" />
+      <item itemvalue="npm.docs:dev" />
+      <item itemvalue="npm.serve" />
       <item itemvalue="npm.start" />
       <item itemvalue="npm.test" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="npm.test" />
+        <item itemvalue="npm.docs:dev" />
+        <item itemvalue="npm.serve" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -268,6 +303,7 @@
       <workItem from="1653811950307" duration="96000" />
       <workItem from="1653812072536" duration="5788000" />
       <workItem from="1653924069589" duration="322000" />
+      <workItem from="1670335902705" duration="5273000" />
     </task>
     <task id="LOCAL-00028" summary="接入Travis CI 更改测试node版本">
       <created>1614303709639</created>
@@ -620,12 +656,13 @@
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="SHOW_OTHER_BRANCHES" value="true" />
-    <option name="COLUMN_ORDER">
+    <option name="COLUMN_ID_ORDER">
       <list>
-        <option value="0" />
-        <option value="2" />
-        <option value="3" />
-        <option value="1" />
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
       </list>
     </option>
   </component>

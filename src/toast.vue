@@ -20,7 +20,7 @@ import WIcon from './icon'
 export default {
   name: 'WToast',
   components: {
-    XIcon: WIcon
+    WIcon
   },
   props: {
     duration: {

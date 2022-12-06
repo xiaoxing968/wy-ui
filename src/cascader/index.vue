@@ -113,7 +113,6 @@ export default {
       }
     },
     getSelectedValue() {
-      console.log(this.selectedNodes, 'this.selectedNodes')
       this.selectedLabels = this.selectedNodes.map(node => node[this.labelName]).join(' / ')
     },
     getSelectedNodes(source) {

@@ -52,7 +52,8 @@ describe('Toast', () => {
             const closeButton = element.querySelector('.close-button')
             expect(closeButton.textContent.trim()).to.eq('知道了')
             const useElement = element.querySelector('use')
-            expect(useElement.getAttribute('xlink:href')).to.equal('#w-close')
+
+            expect(useElement.getAttribute('xlink:href')).to.equal('#icon-close')
             closeButton.click()
             expect(callback).to.have.been.called
             div.remove()
