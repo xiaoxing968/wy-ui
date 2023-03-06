@@ -11,6 +11,12 @@
 <!--       <w-main><div class="layout-demo demo-main">main</div></w-main>-->
 <!--     </w-container>-->
 <!--   </w-container>-->
+   <w-swiper>
+     <w-swiper-item name="1-1"><div class="demo-swiper">1</div></w-swiper-item>
+     <w-swiper-item name="2-2"><div class="demo-swiper">2</div></w-swiper-item>
+     <w-swiper-item name="3-3"><div class="demo-swiper">3</div></w-swiper-item>
+     <w-swiper-item name="4-4"><div class="demo-swiper">4</div></w-swiper-item>
+   </w-swiper>
  </div>
 </template>
 
@@ -22,6 +28,8 @@ import WContainer from '@/layout/container.vue'
 import WCascader from "@/cascader";
 import dataSource from "./cascader/dataSource";
 import WIcon from "./icon.vue"
+import WSwiper from "./swiper/swiper"
+import WSwiperItem from "./swiper/swiper-item"
 
 export default {
 name: "demo",
@@ -32,13 +40,13 @@ name: "demo",
  },
  created(){},
  methods:{},
- components:{WCascader, WHeader, WMain, WContainer, WAside,WIcon}
+ components:{WCascader, WHeader, WMain, WContainer, WAside, WIcon, WSwiper, WSwiperItem}
 }
 
 </script>
 <style scoped>
-.demo-aside{
-  background: #476582;
-  height: 100px;
+.demo-swiper{
+  border: red 1px solid;
+  height: 200px;
 }
 </style>
