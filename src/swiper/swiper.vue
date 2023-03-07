@@ -1,7 +1,16 @@
 <template>
   <div>
-    <div class="w-swiper-window">
-      <slot/>
+    <div class="w-swiper-container"
+         @mouseenter="pause"
+         @mouseleave="autoNext"
+    >
+      <div class="w-swiper-window">
+        <slot/>
+      </div>
+      <div class="w-swiper-actions">
+        <span class="w-swiper-arrow w-swiper-prev" @click="prev"> < </span>
+        <span class="w-swiper-arrow w-swiper-next" @click="next"> > </span>
+      </div>
     </div>
   </div>
 </template>
@@ -25,14 +34,16 @@ export default {
   },
   provide() {
     return {
-      getSelected: () => this.selected // 将当前选中的swiper-item通知到各个节点
+      getSelected: () => this.selected, // 将当前选中的swiper-item通知到各个节点
+      getReverse: () => this.reverse // 动画是否正向
     }
   },
   data() {
     return {
       selectIndex: 0,
       selected: '',
-      timeout: null
+      timeout: null,
+      reverse: false
     }
   },
   created() {
@@ -41,8 +52,7 @@ export default {
     this.init()
   },
   beforeDestroy() {
-    clearTimeout(this.timeout)
-    this.timeout = null
+    this.pause()
   },
   methods: {
     init() {
@@ -64,7 +74,7 @@ export default {
       }
       const play = () => {
         this.timeout = setTimeout(() => {
-          this.prev()
+          this.next()
           play()
         }, this.interval)
       }
@@ -75,6 +85,19 @@ export default {
     },
     prev() {
       this.selectIndex === 0 ? this.selectIndex = this.swiperItems.length - 1 : this.selectIndex--
+    },
+    pause() {
+      clearTimeout(this.timeout)
+      this.timeout = null
+    },
+    // 设置当前动画是否为反向
+    setReverse(val, oldVal) {
+        if ((val === this.swiperItems.length - 1 && oldVal === 0) || val < oldVal) {
+          this.reverse = true
+        }
+        if (val > oldVal || (val === 0 && oldVal === this.swiperItems.length - 1)){
+          this.reverse = false
+        }
     }
   },
   computed: {
@@ -86,7 +109,9 @@ export default {
     },
   },
   watch: {
-    selectIndex() {
+    selectIndex(val, oldVal) {
+      console.log(val, oldVal)
+      this.setReverse(val, oldVal)
       this.updateSelected()
     }
   }
@@ -94,9 +119,41 @@ export default {
 </script>
 
 <style scoped lang="less">
-.w-swiper-window {
+.w-swiper-container {
   position: relative;
-  overflow: hidden;
+
+  .w-swiper-window {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .w-swiper-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .w-swiper-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      display: inline-block;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      width: 20px;
+      background: red;
+      cursor: pointer;
+    }
+
+    .w-swiper-prev {
+      left: 10px;
+    }
+
+    .w-swiper-next {
+      right: 10px;
+    }
+  }
 }
+
 
 </style>

@@ -1,6 +1,6 @@
 <template>
   <transition name="swiper">
-    <div v-show="visible">
+    <div v-show="visible" :class="{ reverse }">
       <slot/>
     </div>
   </transition>
@@ -16,7 +16,8 @@ export default {
     }
   },
   inject: {
-    getSelected: 'getSelected'
+    getSelected: 'getSelected',
+    getReverse: 'getReverse',
   },
   data() {
     return {}
@@ -29,6 +30,9 @@ export default {
   computed: {
     visible() {
       return this.name === this.getSelected()
+    },
+    reverse() {
+      return this.getReverse()
     }
   }
 }
@@ -46,8 +50,14 @@ export default {
 .swiper-enter {
   transform: translateX(100%);
 }
+.swiper-enter.reverse {
+  transform: translateX(-100%);
+}
 
 .swiper-leave-to {
   transform: translateX(-100%);
+}
+.swiper-leave-to.reverse {
+  transform: translateX(100%);
 }
 </style>
