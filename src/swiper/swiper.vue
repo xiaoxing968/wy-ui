@@ -92,12 +92,14 @@ export default {
     },
     // 设置当前动画是否为反向
     setReverse(val, oldVal) {
-        if ((val === this.swiperItems.length - 1 && oldVal === 0) || val < oldVal) {
-          this.reverse = true
-        }
-        if (val > oldVal || (val === 0 && oldVal === this.swiperItems.length - 1)){
-          this.reverse = false
-        }
+      if (
+          (val > oldVal && val !== this.swiperItems.length - 1) ||
+          (oldVal === this.swiperItems.length - 1 && val === 0) ||
+          (val === this.swiperItems.length - 1 && oldVal !== 0)) {
+        this.reverse = false
+      }else {
+        this.reverse = true
+      }
     }
   },
   computed: {
@@ -110,9 +112,8 @@ export default {
   },
   watch: {
     selectIndex(val, oldVal) {
-      console.log(val, oldVal)
-      this.setReverse(val, oldVal)
       this.updateSelected()
+      this.setReverse(val, oldVal)
     }
   }
 }
