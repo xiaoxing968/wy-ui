@@ -44,9 +44,10 @@ export default {
 }
 
 .swiper-leave-active { /* 在第二个item进入前 将第一个item脱离文档流 */
-  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
-
 .swiper-enter {
   transform: translateX(100%);
 }
