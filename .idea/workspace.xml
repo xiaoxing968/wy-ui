@@ -29,16 +29,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2580482a-a355-4d7f-863d-74c37504aa1c" name="默认更改列表" comment="单元测试改为test:unit">
-      <change afterPath="$PROJECT_DIR$/src/svg.js" afterDir="false" />
+    <list default="true" id="2580482a-a355-4d7f-863d-74c37504aa1c" name="默认更改列表" comment="完成swiper的小圆点，提供setActiveItem方法">
+      <change afterPath="$PROJECT_DIR$/src/menu/menu-item.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/menu/menu.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/menu/sub-menu.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/click-outside.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/common.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icon.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/icon.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tabs/tabNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabs/tabNav.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/toast.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/toast.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/tabs.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/tabs.spec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/unit/toast.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/unit/toast.spec.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/wy-ui.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/wy-ui.less" afterDir="false" />
     </list>
     <list id="f214803d-c498-413c-ad97-26e91a52f776" name="New changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,12 +60,22 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/package.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/App.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/cascader/cascaderNodes.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/css/wy-ui.less" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/icon.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/menu/menu-item.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/menu/menu.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/menu/sub-menu.vue" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/plugin/toast.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/svg.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/utils/click-outside.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -81,18 +90,19 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/codes/wy-ui/src",
+    "last_opened_file_path": "D:/codes/wy-ui/src/utils",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\codes\wy-ui\src\utils" />
       <recent name="D:\codes\wy-ui\src" />
       <recent name="D:\2020kunxun\YqVue\docs\components" />
       <recent name="D:\2020kunxun\YqVue\docs\.vuepress\components" />
@@ -110,7 +120,7 @@
       <command value="join lin" />
     </option>
   </component>
-  <component name="RunManager" selected="npm.test">
+  <component name="RunManager" selected="npm.docs:dev">
     <configuration default="true" type="js.build_tools.npm" singleton="false">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -131,6 +141,7 @@
         <script value="docs:dev" />
       </scripts>
       <node-interpreter value="project" />
+      <package-manager value="npm" />
       <envs />
       <method v="2" />
     </configuration>
@@ -151,6 +162,7 @@
         <script value="serve" />
       </scripts>
       <node-interpreter value="project" />
+      <package-manager value="npm" />
       <envs />
       <method v="2" />
     </configuration>
@@ -183,9 +195,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.test" />
         <item itemvalue="npm.docs:dev" />
         <item itemvalue="npm.serve" />
+        <item itemvalue="npm.test" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -303,42 +315,25 @@
       <workItem from="1653811950307" duration="96000" />
       <workItem from="1653812072536" duration="5788000" />
       <workItem from="1653924069589" duration="322000" />
-      <workItem from="1670335902705" duration="5273000" />
-    </task>
-    <task id="LOCAL-00028" summary="接入Travis CI 更改测试node版本">
-      <created>1614303709639</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1614303709639</updated>
-    </task>
-    <task id="LOCAL-00029" summary="接入Travis CI 更改测试node版本">
-      <created>1614304438160</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1614304438160</updated>
-    </task>
-    <task id="LOCAL-00030" summary="修改package.json">
-      <created>1614518480233</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1614518480233</updated>
-    </task>
-    <task id="LOCAL-00031" summary="修改package.json">
-      <created>1614518605613</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1614518605613</updated>
-    </task>
-    <task id="LOCAL-00032" summary="修改svg的问题">
-      <created>1615454102139</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1615454102139</updated>
+      <workItem from="1670335902705" duration="9001000" />
+      <workItem from="1676985672181" duration="24774000" />
+      <workItem from="1680008197266" duration="22598000" />
+      <workItem from="1682255018811" duration="1132000" />
+      <workItem from="1683724405049" duration="633000" />
+      <workItem from="1683732411486" duration="4000" />
+      <workItem from="1683881242442" duration="605000" />
+      <workItem from="1686060783210" duration="17000" />
+      <workItem from="1701784813803" duration="6880000" />
+      <workItem from="1703688897612" duration="2894000" />
+      <workItem from="1705458632273" duration="2294000" />
+      <workItem from="1709206630563" duration="891000" />
+      <workItem from="1710165438434" duration="450000" />
+      <workItem from="1711461153884" duration="1739000" />
+      <workItem from="1712160889808" duration="75000" />
+      <workItem from="1712160972605" duration="1222000" />
+      <workItem from="1712404342584" duration="601000" />
+      <workItem from="1713960596987" duration="301000" />
+      <workItem from="1713960907623" duration="5649000" />
     </task>
     <task id="LOCAL-00033" summary="修改svg的问题">
       <created>1615722714132</created>
@@ -648,7 +643,42 @@
       <option name="project" value="LOCAL" />
       <updated>1653812415674</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="完善tabs和toast的单元测试">
+      <created>1670341496998</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1670341496998</updated>
+    </task>
+    <task id="LOCAL-00078" summary="实现自动轮播功能">
+      <created>1678109229542</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1678109229542</updated>
+    </task>
+    <task id="LOCAL-00079" summary="增加切换上下页。以及正序倒序的动画">
+      <created>1678199010073</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1678199010073</updated>
+    </task>
+    <task id="LOCAL-00080" summary="完成动画正反转">
+      <created>1680010730664</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1680010730664</updated>
+    </task>
+    <task id="LOCAL-00081" summary="完成swiper全部功能">
+      <created>1681045824308</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1681045824308</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -705,12 +735,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="增加layout布局" />
-    <MESSAGE value="layout布局的测试用例" />
-    <MESSAGE value="文件目录结构重构 拆分部分less作为公共属性" />
-    <MESSAGE value="新增toast 并将其挂着在原型上（样式待完善）" />
-    <MESSAGE value="优化样式 toast测试用例" />
-    <MESSAGE value="优化样式以及toast测试用例" />
     <MESSAGE value="新建tabs" />
     <MESSAGE value="新建tabs 和tab的基本结构" />
     <MESSAGE value="注入tabs的eventBus" />
@@ -730,7 +754,13 @@
     <MESSAGE value="改为vue-cli" />
     <MESSAGE value="改为vue-cli。解决上一版本因入口文件被移动到错误的位置，导致无法启动的问题" />
     <MESSAGE value="单元测试改为test:unit" />
-    <option name="LAST_COMMIT_MESSAGE" value="单元测试改为test:unit" />
+    <MESSAGE value="完善tabs和toast的单元测试" />
+    <MESSAGE value="实现自动轮播功能" />
+    <MESSAGE value="增加切换上下页。以及正序倒序的动画" />
+    <MESSAGE value="完成动画正反转" />
+    <MESSAGE value="完成swiper的小圆点，提供setActiveItem方法" />
+    <MESSAGE value="完成swiper全部功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成swiper全部功能" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
