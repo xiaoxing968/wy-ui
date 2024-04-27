@@ -29,6 +29,8 @@
     </w-menu>
     <button @click="test(1)">1</button>
     <button @click="test('3-3')">3-3</button>
+
+    <w-pagination :total="99" :current.sync="currentPage" :page-size="5"></w-pagination>
   </div>
 </template>
 
@@ -45,13 +47,15 @@ import WSwiperItem from "./swiper/swiper-item"
 import WMenu from "@/menu/menu";
 import WMenuItem from "@/menu/menu-item";
 import WSubMenu from "@/menu/sub-menu";
+import WPagination from "@/pagination";
 
 export default {
   name: "demo",
   data() {
     return {
       dataSource,
-      selected: ['culture']
+      selected: ['culture'],
+      currentPage: 1
     }
   },
   created() {
@@ -61,7 +65,9 @@ export default {
       this.$refs.demo.setActiveItem(index)
     }
   },
-  components: {WSubMenu, WMenuItem, WMenu, WCascader, WHeader, WMain, WContainer, WAside, WIcon, WSwiper, WSwiperItem}
+  components: {
+    WPagination,
+    WSubMenu, WMenuItem, WMenu, WCascader, WHeader, WMain, WContainer, WAside, WIcon, WSwiper, WSwiperItem}
 }
 
 </script>

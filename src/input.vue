@@ -114,7 +114,6 @@ export default {
 .wrapper {
   font-size: @font-size-normal;
   display: inline-block;
-  //font-size: $font-size;display: inline-flex;align-items: center;
   > :not(:last-child) {
     margin-right: .2em;
   }
