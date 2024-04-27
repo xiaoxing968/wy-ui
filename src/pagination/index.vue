@@ -48,6 +48,16 @@ export default {
     hideIfOnePage: {
       type: Boolean,
       default: true
+    },
+    // 是否显示总条数
+    totalVisible: {
+      type: Boolean,
+      default: true
+    },
+    // 可选择的pageSize
+    pageSizeOptions: {
+      type: Array,
+      default: () => [10, 20, 50, 100]
     }
   },
   computed: {

@@ -68,6 +68,7 @@ export default {
   justify-content: center;
   align-items: center;
   vertical-align: middle;
+  transition: all .3s;
 
   &:hover {
     color: @main-hover-color;

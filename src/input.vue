@@ -124,6 +124,7 @@ export default {
     border-radius: 4px;
     padding: 0 8px;
     font-size: inherit;
+    transition: all .3s;
 
     &:hover {
       border-color: @main-theme-color;
